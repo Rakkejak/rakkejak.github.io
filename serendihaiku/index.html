@@ -25,7 +25,9 @@
     .haiku-line:nth-child(2){animation-delay:1.35s}
     .haiku-line:nth-child(3){animation-delay:2.35s}
     @keyframes reveal{to{opacity:1;transform:none}}
-    .continue{display:block;margin:56px 0 0 auto;width:fit-content;border:0;border-bottom:2px solid var(--ink);background:none;padding:0 0 6px;font:inherit;font-size:1rem;font-weight:800;cursor:pointer}
+    .haiku-actions{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:56px}
+    .replay,.continue{width:fit-content;border:0;border-bottom:2px solid var(--ink);background:none;padding:0 0 6px;font:inherit;font-size:1rem;font-weight:800;cursor:pointer;color:var(--ink)}
+    .replay:hover,.replay:focus-visible,.continue:hover,.continue:focus-visible{color:var(--accent);border-color:var(--accent)}
     .analysis{padding:clamp(58px,8vw,110px) 0;border-top:1px solid rgba(17,17,15,.25)}
     .analysis-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);gap:clamp(50px,8vw,120px);align-items:start}
     .count-list{display:grid;gap:22px;margin-top:30px}
@@ -44,7 +46,7 @@
     .passport dd{margin:0;overflow-wrap:anywhere}
     .next{margin-top:60px;display:flex;justify-content:flex-end}
     .next button{border:0;background:var(--accent);color:var(--ink);padding:16px 20px;font:inherit;font-weight:900;cursor:pointer}
-    @media(max-width:760px){.hero{min-height:72svh;padding-top:80px}.analysis-grid{grid-template-columns:1fr}.passport{grid-template-columns:1fr;gap:4px}.passport dd{margin-bottom:10px}.count-row{grid-template-columns:36px 1fr}.continue{margin-left:0}.source-links{flex-direction:column;gap:12px}}
+    @media(max-width:760px){.hero{min-height:72svh;padding-top:80px}.analysis-grid{grid-template-columns:1fr}.passport{grid-template-columns:1fr;gap:4px}.passport dd{margin-bottom:10px}.count-row{grid-template-columns:36px 1fr}.source-links{flex-direction:column;gap:12px}.haiku-actions{align-items:flex-start;flex-direction:column;gap:20px}}
     @media(prefers-reduced-motion:reduce){.haiku-line{animation:none;opacity:1;transform:none}}
   </style>
 </head>
@@ -63,7 +65,10 @@
           <span class="haiku-line">Belofte niet ingelost</span>
           <span class="haiku-line">Ritme gebroken</span>
         </h1>
-        <button class="continue" id="continueBtn">bekijk waarom dit een haiku is ↓</button>
+        <div class="haiku-actions">
+          <button class="replay" id="replayBtn" type="button">opnieuw ↻</button>
+          <button class="continue" id="continueBtn" type="button">bekijk waarom dit een haiku is ↓</button>
+        </div>
       </div>
     </section>
 
@@ -106,6 +111,17 @@
     </section>
   </main>
   <script>
+    const lines = [...document.querySelectorAll('.haiku-line')];
+    const replayBtn = document.getElementById('replayBtn');
+
+    function replayHaiku(){
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      lines.forEach((line)=>{ line.style.animation = 'none'; });
+      void document.getElementById('haiku-title').offsetWidth;
+      lines.forEach((line)=>{ line.style.animation = ''; });
+    }
+
+    replayBtn.addEventListener('click', replayHaiku);
     document.getElementById('continueBtn').addEventListener('click',()=>{
       document.getElementById('analyse').scrollIntoView({behavior:'smooth'});
     });
