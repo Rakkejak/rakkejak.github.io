@@ -1,1 +1,27 @@
-PLACEHOLDER
+[
+  {
+    "id": 36899,
+    "line1": "Deadline ruim gemist",
+    "line2": "Belofte niet ingelost",
+    "line3": "Ritme gebroken",
+    "breakdown": [[{"word":"Deadline","syllables":2},{"word":"ruim","syllables":1},{"word":"gemist","syllables":2}],[{"word":"Belofte","syllables":3},{"word":"niet","syllables":1},{"word":"ingelost","syllables":3}],[{"word":"Ritme","syllables":2},{"word":"gebroken","syllables":3}]],
+    "source_kind":"public_chatgpt_share",
+    "source_dataset":"anoynsharechat/sharechat",
+    "source_dataset_viewer":"https://huggingface.co/datasets/anoynsharechat/sharechat/viewer/chatgpt/train",
+    "source_row_idx":562622,
+    "source_url":"https://chatgpt.com/share/6822d4b6-9064-800f-bdaf-0a026a307657",
+    "message_index":204,
+    "model":"default_model_slug",
+    "message_create_time":"ts:1747749901.518981",
+    "conversation_create_time":"2025-05-13 01:12:22",
+    "source_sha256":"71c8e08c3c62eb108a8b9363e8ce4125fd712e23b9dde56008741a7163008307"
+  },
+  {
+    "id":16549,
+    "line1":"overleefd en daarna",
+    "line2":"over hangbruggen gelopen",
+    "line3":"door het nevelwoud",
+    "breakdown":[[{"word":"overleefd","syllables":2},{"word":"en","syllables":1},{"word":"daarna","syllables":2}],[{"word":"over","syllables":1},{"word":"hangbruggen","syllables":3},{"word":"gelopen","syllables":3}],[{"word":"door","syllables":1},{"word":"het","syllables":1},{"word":"nevelwoud","syllables":3}]],
+    "source_kind":"public_chatgpt_share","source_dataset":"anoynsharechat/sharechat","source_dataset_viewer":"https://huggingface.co/datasets/anoynsharechat/sharechat/viewer/chatgpt/train","source_row_idx":302223,"source_url":"https://chatgpt.com/share/686f70cc-b208-8011-aa94-225a3739cfab","message_index":8,"model":"default_model_slug","message_create_time":"ts:1752133525.700614","conversation_create_time":"2025-07-10 03:50:36","source_sha256":"f00e1c8f721920926810099aed7a3caa47a3738f5e71571689ae6cbcf927ece7"
+  }
+]
