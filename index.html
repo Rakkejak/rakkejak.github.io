@@ -7,7 +7,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-EX97WVPWHX');
   </script>
 
@@ -48,12 +47,84 @@
       <div class="work-list">
         <div class="work-item"><span>01</span><strong>We bedenken ideeën voor televisie &amp; socials</strong><b aria-hidden="true">→</b></div>
         <div class="work-item"><span>02</span><strong>We geven workshops om te leren brainstormen met AI</strong><b aria-hidden="true">→</b></div>
-        <div class="work-item"><span>03</span><strong>We bouwen gratis websites</strong><a class="work-arrow" href="https://hetbestevannetflix.be/" target="_blank" rel="noopener noreferrer" aria-label="Bekijk Het Beste Van Netflix">→</a></div>
+        <div class="work-item catalog-work-item">
+          <span>03</span>
+          <strong>We bouwen gratis websites, tools &amp; apps</strong>
+          <button class="work-arrow catalog-trigger" id="openCatalog" aria-label="Open catalogus">→</button>
+        </div>
         <div class="work-item"><span>04</span><strong>We schrijven online nieuwsbrieven (maar dat is anoniem)</strong></div>
       </div>
     </section>
 
     <footer><p>Rakkejak.</p><a href="mailto:tom@rakkejak.be">Goesting in een idee?</a></footer>
   </main>
+
+  <section class="catalog-modal" id="catalogModal" aria-hidden="true">
+    <button class="catalog-backdrop" id="catalogBackdrop" aria-label="Sluit catalogus"></button>
+    <div class="catalog-panel" role="dialog" aria-modal="true" aria-labelledby="catalogTitle">
+      <header class="catalog-header">
+        <h2 class="catalog-brand" id="catalogTitle">rakkejak</h2>
+        <button class="catalog-close" id="closeCatalog" aria-label="Sluit catalogus"></button>
+      </header>
+
+      <div class="catalog-grid" aria-label="Rakkejak catalogus">
+        <article class="catalog-card catalog-card-disabled" aria-label="Serendihaiku — binnenkort">
+          <div class="catalog-image-wrap">
+            <img src="catalog-assets/serendihaiku.svg" alt="Serendihaiku — de wereld zit vol poëzie.">
+          </div>
+          <p class="catalog-label">FOUND POETRY</p>
+        </article>
+
+        <a class="catalog-card" href="/exitquizklok/" aria-label="Open Exit Quiz">
+          <div class="catalog-image-wrap">
+            <img src="catalog-assets/exitquiz.svg" alt="Exit Quiz — elke les eindigt met een vraag.">
+          </div>
+          <p class="catalog-label">EXIT ENQUÊTE</p>
+        </a>
+
+        <a class="catalog-card" href="/lesblok/" aria-label="Open Lesblok">
+          <div class="catalog-image-wrap">
+            <img src="catalog-assets/lesblok.svg" alt="Lesblok — weten wat er komt, wanneer het komt.">
+          </div>
+          <p class="catalog-label">FOCUSTOOL VOOR PUBLIEK</p>
+        </a>
+
+        <a class="catalog-card" href="https://hetbestevannetflix.be/" target="_blank" rel="noopener noreferrer" aria-label="Open Het Beste Van Netflix">
+          <div class="catalog-image-wrap">
+            <img src="catalog-assets/netflix.svg" alt="hetbestevannetflix.be — het allerbeste op Netflix in België">
+          </div>
+          <p class="catalog-label">STREAMING GUIDE</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const modal = document.getElementById('catalogModal');
+    const openButton = document.getElementById('openCatalog');
+    const closeButton = document.getElementById('closeCatalog');
+    const backdrop = document.getElementById('catalogBackdrop');
+
+    function openCatalog() {
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('modal-open');
+      closeButton.focus();
+    }
+
+    function closeCatalog() {
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('modal-open');
+      openButton.focus();
+    }
+
+    openButton.addEventListener('click', openCatalog);
+    closeButton.addEventListener('click', closeCatalog);
+    backdrop.addEventListener('click', closeCatalog);
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && modal.classList.contains('is-open')) closeCatalog();
+    });
+  </script>
 </body>
 </html>
