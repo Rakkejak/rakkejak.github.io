@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Serendihaiku — gedichten die niemand van plan was te schrijven. Onbewust geschreven haiku's in onverwachte stukken tekst.">
+  <title>Serendihaiku — Rakkejak</title>
+  <style>
+    :root{--paper:#f2f0e9;--ink:#11110f;--accent:#ff4d00;--muted:#66625b}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+    a{color:inherit}
+    .page{min-height:100svh;padding:28px clamp(22px,5vw,72px) 54px}
+    .topbar{display:flex;justify-content:space-between;align-items:center;gap:20px}
+    .brand{font-size:clamp(1.25rem,2vw,1.7rem);font-weight:800;letter-spacing:-.06em;text-decoration:none}
+    .brand:after{content:"";display:inline-block;width:.36em;height:.36em;margin-left:.28em;border-radius:50%;background:var(--accent);vertical-align:.08em}
+    .back{font-size:.85rem;font-weight:800;text-decoration:none;border-bottom:1.5px solid currentColor;padding-bottom:3px}
+    .hero{min-height:calc(100svh - 90px);display:flex;align-items:center;justify-content:center;padding:64px 0}
+    .haiku-wrap{width:min(1100px,100%)}
+    .eyebrow{margin:0 0 34px;color:var(--accent);font-size:.72rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+    .haiku{margin:0;font-size:clamp(3rem,7.2vw,7.6rem);line-height:.94;letter-spacing:-.065em;font-weight:650}
+    .haiku-line{display:block;opacity:0;transform:translateY(18px);animation:reveal .55s cubic-bezier(.2,.75,.25,1) forwards}
+    .haiku-line:nth-child(1){animation-delay:.35s}
+    .haiku-line:nth-child(2){animation-delay:1.35s}
+    .haiku-line:nth-child(3){animation-delay:2.35s}
+    @keyframes reveal{to{opacity:1;transform:none}}
+    .continue{display:block;margin:56px 0 0 auto;width:fit-content;border:0;border-bottom:2px solid var(--ink);background:none;padding:0 0 6px;font:inherit;font-size:1rem;font-weight:800;cursor:pointer}
+    .analysis{padding:clamp(58px,8vw,110px) 0;border-top:1px solid rgba(17,17,15,.25)}
+    .analysis-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);gap:clamp(50px,8vw,120px);align-items:start}
+    .count-list{display:grid;gap:22px;margin-top:30px}
+    .count-row{display:grid;grid-template-columns:48px 1fr;align-items:baseline;gap:10px;font-size:clamp(1.3rem,2.3vw,2rem)}
+    .count-row strong{font-size:1em}
+    .count-row sup{font-size:.55em;font-weight:700;vertical-align:super;margin-left:1px}
+    .found{background:var(--ink);color:var(--paper);padding:clamp(28px,4vw,46px);border-radius:2px}
+    .found-label{margin:0 0 16px;color:var(--accent);font-size:.7rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+    .found h2{margin:0;font-size:clamp(2rem,4.2vw,4.5rem);line-height:.96;letter-spacing:-.055em;font-weight:650}
+    .source{padding:clamp(70px,9vw,120px) 0 20px}
+    .source-title{margin:0 0 28px;font-size:.85rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase}
+    .source-links{display:flex;flex-wrap:wrap;gap:18px 28px;margin-bottom:34px}
+    .source-links a{font-size:clamp(1.05rem,2vw,1.45rem);text-underline-offset:5px}
+    .passport{border-top:1px solid rgba(17,17,15,.18);border-bottom:1px solid rgba(17,17,15,.18);padding:20px 0;display:grid;grid-template-columns:240px 1fr;gap:10px 28px;max-width:1050px;color:var(--muted);font-size:clamp(.95rem,1.4vw,1.08rem)}
+    .passport dt{font-weight:800}
+    .passport dd{margin:0;overflow-wrap:anywhere}
+    .next{margin-top:60px;display:flex;justify-content:flex-end}
+    .next button{border:0;background:var(--accent);color:var(--ink);padding:16px 20px;font:inherit;font-weight:900;cursor:pointer}
+    @media(max-width:760px){.hero{min-height:72svh;padding-top:80px}.analysis-grid{grid-template-columns:1fr}.passport{grid-template-columns:1fr;gap:4px}.passport dd{margin-bottom:10px}.count-row{grid-template-columns:36px 1fr}.continue{margin-left:0}.source-links{flex-direction:column;gap:12px}}
+    @media(prefers-reduced-motion:reduce){.haiku-line{animation:none;opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <a class="brand" href="/serendihaiku/">Serendihaiku</a>
+      <a class="back" href="/">rakkejak ↗</a>
+    </header>
+
+    <section class="hero" aria-labelledby="haiku-title">
+      <div class="haiku-wrap">
+        <p class="eyebrow">gevonden haiku · #001</p>
+        <h1 class="haiku" id="haiku-title">
+          <span class="haiku-line">Deadline ruim gemist</span>
+          <span class="haiku-line">Belofte niet ingelost</span>
+          <span class="haiku-line">Ritme gebroken</span>
+        </h1>
+        <button class="continue" id="continueBtn">bekijk waarom dit een haiku is ↓</button>
+      </div>
+    </section>
+
+    <section class="analysis" id="analyse" aria-labelledby="analyse-title">
+      <div class="analysis-grid">
+        <div>
+          <p class="eyebrow" id="analyse-title">5 · 7 · 5</p>
+          <div class="count-list" aria-label="Lettergreeptelling">
+            <div class="count-row"><strong>5:</strong><span>Deadline<sup>2</sup> &nbsp; ruim<sup>1</sup> &nbsp; gemist<sup>2</sup></span></div>
+            <div class="count-row"><strong>7:</strong><span>Belofte<sup>3</sup> &nbsp; niet<sup>1</sup> &nbsp; ingelost<sup>3</sup></span></div>
+            <div class="count-row"><strong>5:</strong><span>Ritme<sup>2</sup> &nbsp; gebroken<sup>3</sup></span></div>
+          </div>
+        </div>
+        <aside class="found">
+          <p class="found-label">serendipiteit</p>
+          <h2>Gevonden in een openbaar gedeelde ChatGPT-chat.</h2>
+        </aside>
+      </div>
+    </section>
+
+    <section class="source" aria-labelledby="source-title">
+      <h2 class="source-title" id="source-title">Bron</h2>
+      <nav class="source-links" aria-label="Bronlinks">
+        <a href="#" aria-disabled="true">Originele gedeelde ChatGPT-chat ↗</a>
+        <a href="#" aria-disabled="true">Wayback-controle ↗</a>
+        <a href="#" aria-disabled="true">Dataset ↗</a>
+      </nav>
+      <dl class="passport">
+        <dt>Herkomst</dt><dd>AI</dd>
+        <dt>Taal haiku</dt><dd>nl</dd>
+        <dt>Dataset</dt><dd>anoynsharechat/sharechat</dd>
+        <dt>Dataset-rij</dt><dd>562622</dd>
+        <dt>Bericht-index</dt><dd>204</dd>
+        <dt>Model</dt><dd>default_model_slug</dd>
+        <dt>Berichttijd</dt><dd>ts:1747749901.518981</dd>
+        <dt>Chat aangemaakt</dt><dd>2025-05-13 01:12:22</dd>
+        <dt>SHA-256 bronbericht</dt><dd>71c8e08c3c62eb108a8b9363e8ce4125fd712e23b9dde56008741a7163008307</dd>
+      </dl>
+      <div class="next"><button type="button">volgende haiku →</button></div>
+    </section>
+  </main>
+  <script>
+    document.getElementById('continueBtn').addEventListener('click',()=>{
+      document.getElementById('analyse').scrollIntoView({behavior:'smooth'});
+    });
+  </script>
+</body>
+</html>
