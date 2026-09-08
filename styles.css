@@ -33,7 +33,25 @@ a {
 .site-header {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  gap: 28px;
+  flex-wrap: nowrap;
+}
+
+.brand-lockup {
+  display: flex;
   align-items: center;
+  gap: 18px;
+  min-width: 0;
+  flex: none;
+}
+
+.ensor-copy {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .hero-actions {
@@ -41,6 +59,8 @@ a {
   align-items: flex-end;
   justify-content: flex-end;
   gap: clamp(18px, 2vw, 34px);
+  flex-wrap: nowrap;
+  min-width: 0;
 }
 
 .wordmark {
@@ -116,6 +136,7 @@ h1 {
   text-decoration: none;
   padding: 0 0 5px;
   transition: color 180ms ease, border-color 180ms ease;
+  white-space: nowrap;
 }
 
 .hero-contact {
@@ -448,6 +469,28 @@ body.modal-open {
 }
 
 @media (max-width: 900px) {
+  .site-header {
+    gap: 16px;
+  }
+
+  .brand-lockup {
+    gap: 10px;
+  }
+
+  .ensor-copy {
+    font-size: 9px;
+    letter-spacing: 0.08em;
+  }
+
+  .hero-actions {
+    gap: 12px;
+  }
+
+  .hero-contact,
+  .hero-workshop {
+    font-size: 0.78rem;
+  }
+
   .catalog-panel {
     inset: 16px;
     padding: 24px 22px 28px;
@@ -470,20 +513,12 @@ body.modal-open {
 
   .site-header {
     align-items: flex-start;
-    gap: 18px;
   }
 
   .hero-actions {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-end;
-    gap: 10px;
-  }
-
-  .hero-contact,
-  .hero-workshop {
-    font-size: 0.86rem;
-    text-align: right;
-    max-width: 46vw;
+    flex-wrap: nowrap;
   }
 
   .work-item {
