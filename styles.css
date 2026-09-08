@@ -53,6 +53,8 @@ a {
   letter-spacing: 0.10em;
   text-transform: uppercase;
   white-space: nowrap;
+  position: relative;
+  top: 3px;
 }
 
 .hero-actions {
