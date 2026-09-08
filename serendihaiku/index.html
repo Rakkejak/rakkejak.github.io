@@ -30,8 +30,9 @@
     .next-symbol{width:58px;height:58px;border:2px solid var(--ink);border-radius:50%;background:transparent;color:var(--ink);font-size:2rem;line-height:1;cursor:pointer;display:grid;place-items:center;transition:.18s;flex:none}
     .next-symbol:hover,.next-symbol:focus-visible{background:var(--accent);border-color:var(--accent);transform:translateX(3px)}
     .haiku-actions{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:42px}
+    .haiku-actions-left{display:flex;align-items:center;gap:70px}
     .replay,.continue,.source-jump,.hero-source{width:fit-content;border:0;border-bottom:2px solid var(--ink);background:none;padding:0 0 6px;font:inherit;font-size:1rem;font-weight:800;cursor:pointer;color:var(--ink);text-decoration:none}
-    .hero-source{position:absolute;top:0;right:35px;font-size:.9rem;font-weight:800;padding-bottom:4px;border-bottom-width:1.5px;opacity:.88}
+    .hero-source{font-size:.9rem;font-weight:800;padding-bottom:4px;border-bottom-width:1.5px;opacity:.88}
     .replay:hover,.replay:focus-visible,.continue:hover,.continue:focus-visible,.source-jump:hover,.source-jump:focus-visible,.hero-source:hover,.hero-source:focus-visible{color:var(--accent);border-color:var(--accent)}
 
     .analysis{padding:clamp(58px,8vw,110px) 0;border-top:1px solid rgba(17,17,15,.25)}
@@ -74,9 +75,10 @@
       .hero{min-height:72svh;padding-top:70px}
       .haiku-row{grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:end}
       .haiku-rail{align-items:flex-end;justify-content:flex-end}
-      .hero-source{position:static;display:block;margin:0 0 24px auto;font-size:.82rem}
       .next-symbol{width:46px;height:46px;font-size:1.55rem;margin-bottom:4px}
       .haiku-actions{align-items:flex-start;flex-direction:column;gap:20px;margin-top:34px}
+      .haiku-actions-left{gap:30px;flex-wrap:wrap}
+      .hero-source{font-size:.82rem}
       .haiku-line + .haiku-line{margin-top:.3em}
       .analysis-grid{grid-template-columns:1fr}.passport{grid-template-columns:1fr;gap:4px}.passport dd{margin-bottom:10px}.count-row{grid-template-columns:36px 1fr}.source-links{flex-direction:column;gap:12px}
       .bottom-actions{align-items:flex-end;gap:18px}.how-button{font-size:.9rem}.next button{padding:14px 16px}
@@ -92,7 +94,6 @@
     <section class="hero" aria-labelledby="haiku-title">
       <div class="haiku-wrap">
         <p class="eyebrow">We verzamelen onbedoelde Haiku's in openbare teksten</p>
-        <a class="hero-source" href="#bron">bron? ↓</a>
         <div class="haiku-row">
           <h1 class="haiku" id="haiku-title">
             <span class="haiku-line"></span>
@@ -104,7 +105,10 @@
           </div>
         </div>
         <div class="haiku-actions">
-          <button class="replay" id="replayBtn" type="button">opnieuw ↻</button>
+          <div class="haiku-actions-left">
+            <button class="replay" id="replayBtn" type="button">opnieuw ↻</button>
+            <a class="hero-source" href="#bron">bron? ↓</a>
+          </div>
           <button class="continue" id="continueBtn" type="button">bekijk waarom dit een haiku is ↓</button>
         </div>
       </div>
