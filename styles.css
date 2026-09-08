@@ -36,6 +36,13 @@ a {
   align-items: center;
 }
 
+.hero-actions {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: clamp(18px, 2vw, 34px);
+}
+
 .wordmark {
   font-size: clamp(1.25rem, 2vw, 1.75rem);
   font-weight: 800;
@@ -99,23 +106,43 @@ h1 {
   border-color: var(--accent);
 }
 
-.hero-contact {
+.hero-contact,
+.hero-workshop {
   width: fit-content;
-  color: var(--accent);
   font-size: clamp(0.95rem, 1.25vw, 1.15rem);
   font-weight: 800;
   line-height: 1.25;
   letter-spacing: normal;
   text-decoration: none;
-  border-bottom: 2px solid var(--accent);
-  padding-bottom: 5px;
+  padding: 0 0 5px;
   transition: color 180ms ease, border-color 180ms ease;
+}
+
+.hero-contact {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
 }
 
 .hero-contact:hover,
 .hero-contact:focus-visible {
   color: var(--ink);
   border-color: var(--ink);
+}
+
+.hero-workshop {
+  appearance: none;
+  background: none;
+  border: 0;
+  border-bottom: 2px solid var(--ink);
+  color: var(--ink);
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.hero-workshop:hover,
+.hero-workshop:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent);
 }
 
 .hero-link {
@@ -446,7 +473,14 @@ body.modal-open {
     gap: 18px;
   }
 
-  .hero-contact {
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  .hero-contact,
+  .hero-workshop {
     font-size: 0.86rem;
     text-align: right;
     max-width: 46vw;
