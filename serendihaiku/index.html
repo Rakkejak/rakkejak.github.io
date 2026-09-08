@@ -10,6 +10,7 @@
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+    body.modal-open{overflow:hidden}
     a{color:inherit}
     .page{min-height:100svh;padding:28px clamp(22px,5vw,72px) 54px}
     .topbar{display:flex;justify-content:space-between;align-items:center;gap:20px}
@@ -47,7 +48,25 @@
     .source-links a{font-size:clamp(1.05rem,2vw,1.45rem);text-underline-offset:5px}
     .passport{border-top:1px solid rgba(17,17,15,.18);border-bottom:1px solid rgba(17,17,15,.18);padding:20px 0;display:grid;grid-template-columns:240px 1fr;gap:10px 28px;max-width:1050px;color:var(--muted);font-size:clamp(.95rem,1.4vw,1.08rem)}
     .passport dt{font-weight:800}.passport dd{margin:0;overflow-wrap:anywhere}
-    .next{margin-top:60px;display:flex;justify-content:flex-end}.next button{border:0;background:var(--accent);color:var(--ink);padding:16px 20px;font:inherit;font-weight:900;cursor:pointer}
+    .bottom-actions{margin-top:60px;display:flex;justify-content:space-between;align-items:center;gap:24px}
+    .how-button{border:0;border-bottom:2px solid var(--ink);background:transparent;color:var(--ink);padding:0 0 6px;font:inherit;font-size:1rem;font-weight:900;cursor:pointer}
+    .how-button:hover,.how-button:focus-visible{color:var(--accent);border-color:var(--accent)}
+    .next button{border:0;background:var(--accent);color:var(--ink);padding:16px 20px;font:inherit;font-weight:900;cursor:pointer}
+
+    .method-modal{position:fixed;inset:0;z-index:1000;display:none;place-items:center;padding:20px}
+    .method-modal.is-open{display:grid}
+    .method-backdrop{position:absolute;inset:0;border:0;background:rgba(17,17,15,.72);backdrop-filter:blur(6px);cursor:pointer}
+    .method-panel{position:relative;width:min(760px,100%);max-height:min(84vh,760px);overflow:auto;background:var(--ink);color:var(--paper);border-radius:18px;padding:clamp(28px,5vw,58px);box-shadow:0 30px 100px rgba(0,0,0,.4)}
+    .method-close{position:absolute;right:24px;top:22px;width:34px;height:34px;border:0;background:none;color:var(--paper);cursor:pointer}
+    .method-close:before,.method-close:after{content:"";position:absolute;left:50%;top:50%;width:26px;height:2px;background:currentColor;transform-origin:center}
+    .method-close:before{transform:translate(-50%,-50%) rotate(45deg)}
+    .method-close:after{transform:translate(-50%,-50%) rotate(-45deg)}
+    .method-close:hover,.method-close:focus-visible{color:var(--accent)}
+    .method-kicker{margin:0 0 22px;color:var(--accent);font-size:.72rem;font-weight:900;letter-spacing:.18em;text-transform:uppercase}
+    .method-panel h2{max-width:620px;margin:0 0 28px;font-size:clamp(2.4rem,5vw,5rem);line-height:.94;letter-spacing:-.055em;font-weight:650}
+    .method-copy{max-width:650px;font-size:clamp(1.05rem,1.7vw,1.35rem);line-height:1.48}
+    .method-copy p{margin:0}
+    .method-copy p+p{margin-top:1em}
 
     @media(max-width:760px){
       .hero{min-height:72svh;padding-top:70px}
@@ -56,6 +75,8 @@
       .haiku-actions{align-items:flex-start;flex-direction:column;gap:20px;margin-top:34px}
       .haiku-line + .haiku-line{margin-top:.3em}
       .analysis-grid{grid-template-columns:1fr}.passport{grid-template-columns:1fr;gap:4px}.passport dd{margin-bottom:10px}.count-row{grid-template-columns:36px 1fr}.source-links{flex-direction:column;gap:12px}
+      .bottom-actions{align-items:flex-end;gap:18px}.how-button{font-size:.9rem}.next button{padding:14px 16px}
+      .method-panel{border-radius:14px;padding:34px 24px 30px}.method-close{right:14px;top:14px}
     }
     @media(prefers-reduced-motion:reduce){.haiku-line{opacity:1;transform:none}}
   </style>
@@ -94,9 +115,26 @@
       <h2 class="source-title" id="source-title">Bron</h2>
       <nav class="source-links" aria-label="Bronlinks"><a id="chatLink" target="_blank" rel="noopener noreferrer">Originele gedeelde ChatGPT-chat ↗</a><a id="datasetLink" target="_blank" rel="noopener noreferrer">Dataset ↗</a></nav>
       <dl class="passport" id="passport"></dl>
-      <div class="next"><button type="button" id="nextBottom">volgende haiku →</button></div>
+      <div class="bottom-actions">
+        <button class="how-button" id="openMethod" type="button">hoe vinden we Haiku's?</button>
+        <div class="next"><button type="button" id="nextBottom">volgende haiku →</button></div>
+      </div>
     </section>
   </main>
+
+  <section class="method-modal" id="methodModal" aria-hidden="true">
+    <button class="method-backdrop" id="methodBackdrop" aria-label="Sluit uitleg"></button>
+    <div class="method-panel" role="dialog" aria-modal="true" aria-labelledby="methodTitle">
+      <button class="method-close" id="closeMethod" type="button" aria-label="Sluit uitleg"></button>
+      <p class="method-kicker">hoe vinden we Haiku's?</p>
+      <h2 id="methodTitle">We zoeken naar poëzie die er al was.</h2>
+      <div class="method-copy">
+        <p>We doorzoeken openbaar gedeelde ChatGPT-chats naar passages die toevallig het ritme van een haiku vormen: vijf, zeven en vijf lettergrepen.</p>
+        <p>De computer vindt kandidaten en telt de lettergrepen. Daarna selecteren we zelf welke vondsten echt werken als gedicht. We herschrijven de haiku niet: de woorden komen uit de oorspronkelijke tekst.</p>
+        <p>Bij elke haiku bewaren we het bronpaspoort — met de gedeelde chat, dataset-rij, bericht-index, tijdstip en SHA-256 — zodat de herkomst controleerbaar blijft.</p>
+      </div>
+    </div>
+  </section>
 
   <script>
     const DATASET_URL='https://huggingface.co/datasets/anoynsharechat/sharechat/viewer/chatgpt/train';
@@ -116,7 +154,6 @@
       const maxSize=viewportW<760?Math.min(66,viewportW*.13):Math.min(108,viewportW*.062);
       const minSize=viewportW<760?18:30;
       let low=minSize,high=maxSize,best=minSize;
-
       haikuEl.style.fontSize=minSize+'px';
       for(let n=0;n<16;n++){
         const mid=(low+high)/2;
@@ -124,7 +161,6 @@
         if(linesFit()){best=mid;low=mid}else{high=mid}
       }
       haikuEl.style.fontSize=best+'px';
-
       if(!linesFit()){
         const ratios=lines.map(line=>line.scrollWidth?line.clientWidth/line.scrollWidth:1);
         const ratio=Math.min(...ratios,1);
@@ -146,6 +182,18 @@
     document.getElementById('nextSymbol').addEventListener('click',nextHaiku);
     document.getElementById('nextBottom').addEventListener('click',nextHaiku);
     document.getElementById('continueBtn').addEventListener('click',()=>document.getElementById('analyse').scrollIntoView({behavior:'smooth'}));
+
+    const methodModal=document.getElementById('methodModal');
+    const openMethod=document.getElementById('openMethod');
+    const closeMethod=document.getElementById('closeMethod');
+    const methodBackdrop=document.getElementById('methodBackdrop');
+    function showMethod(){methodModal.classList.add('is-open');methodModal.setAttribute('aria-hidden','false');document.body.classList.add('modal-open');closeMethod.focus()}
+    function hideMethod(){methodModal.classList.remove('is-open');methodModal.setAttribute('aria-hidden','true');document.body.classList.remove('modal-open');openMethod.focus()}
+    openMethod.addEventListener('click',showMethod);
+    closeMethod.addEventListener('click',hideMethod);
+    methodBackdrop.addEventListener('click',hideMethod);
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'&&methodModal.classList.contains('is-open'))hideMethod()});
+
     let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(fitHaiku,100)});
     fetch('haikus.json').then(r=>{if(!r.ok)throw new Error('data');return r.json()}).then(data=>{haikus=data;render()}).catch(()=>{cancelPoemAnimation();lines[0].textContent='Haiku’s konden niet laden';lines[1].textContent='probeer de pagina';lines[2].textContent='opnieuw te openen';fitHaiku();playPoem()});
   </script>
