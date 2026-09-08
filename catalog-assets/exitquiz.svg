@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
-  <rect width="1200" height="1200" fill="#f2f0e9"/>
-  <g fill="#11110f" font-family="Arial, Helvetica, sans-serif" font-weight="800" letter-spacing="-12">
-    <text x="58" y="570" font-size="400">Exit</text>
-    <text x="58" y="865" font-size="400">Quiz</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1400">
+  <rect width="1000" height="1400" fill="#f2f0e9"/>
+  <g fill="#11110f" font-family="Arial, Helvetica, sans-serif" font-weight="800" letter-spacing="-10">
+    <text x="58" y="420" font-size="255">Exit</text>
+    <text x="58" y="675" font-size="255">Quiz</text>
   </g>
-  <circle cx="865" cy="825" r="48" fill="#ff4d00"/>
-  <text x="62" y="1018" fill="#11110f" font-family="Arial, Helvetica, sans-serif" font-size="44" letter-spacing="13">elke les eindigt met een vraag.</text>
+  <circle cx="660" cy="638" r="31" fill="#ff4d00"/>
+  <text x="62" y="1210" fill="#11110f" font-family="Arial, Helvetica, sans-serif" font-size="38" letter-spacing="10">elke les eindigt met een vraag.</text>
 </svg>
