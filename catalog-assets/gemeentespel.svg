@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
-  <rect width="1200" height="1200" fill="#f2f0e9"/>
-  <g fill="#11110f" font-family="Arial, Helvetica, sans-serif" font-weight="800" letter-spacing="-12">
-    <text x="58" y="500" font-size="245">Het</text>
-    <text x="58" y="725" font-size="245">Gemeente</text>
-    <text x="58" y="925" font-size="245">spel</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1400">
+  <rect width="1000" height="1400" fill="#f2f0e9"/>
+  <g fill="#11110f" font-family="Arial, Helvetica, sans-serif" font-weight="800" letter-spacing="-9">
+    <text x="58" y="365" font-size="160">Het</text>
+    <text x="58" y="575" font-size="160">Gemeente</text>
+    <text x="58" y="785" font-size="160">spel</text>
   </g>
-  <circle cx="850" cy="888" r="46" fill="#ff4d00"/>
-  <text x="62" y="1060" fill="#11110f" font-family="Arial, Helvetica, sans-serif" font-size="42" letter-spacing="12">van waar komt het verhaal?</text>
+  <circle cx="430" cy="760" r="22" fill="#ff4d00"/>
+  <text x="62" y="1210" fill="#11110f" font-family="Arial, Helvetica, sans-serif" font-size="34" letter-spacing="9">van waar komt het verhaal?</text>
 </svg>
