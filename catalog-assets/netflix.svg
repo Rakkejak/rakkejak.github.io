@@ -1,10 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
-  <rect width="1200" height="1200" fill="#f2f0e9"/>
-  <g fill="#11110f" font-family="Arial, Helvetica, sans-serif" font-weight="800">
-    <text x="50" y="560" font-size="230" textLength="1090" lengthAdjust="spacingAndGlyphs">hetbestevan</text>
-    <text x="50" y="850" font-size="315" textLength="760" lengthAdjust="spacingAndGlyphs">netflix</text>
-    <text x="955" y="850" font-size="315" textLength="190" lengthAdjust="spacingAndGlyphs">be</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1400">
+  <rect width="1000" height="1400" fill="#f2f0e9"/>
+  <g fill="#11110f" font-family="Arial, Helvetica, sans-serif" font-weight="800" letter-spacing="-9">
+    <text x="58" y="360" font-size="175">Het Beste</text>
+    <text x="58" y="565" font-size="175">van</text>
+    <text x="58" y="770" font-size="168">Netflix</text>
+    <text x="628" y="770" font-size="168">be</text>
   </g>
-  <circle cx="885" cy="800" r="42" fill="#ff4d00"/>
-  <text x="50" y="1010" fill="#11110f" font-family="Arial, Helvetica, sans-serif" font-size="43" letter-spacing="10">het allerbeste op Netflix in België</text>
+  <circle cx="568" cy="743" r="27" fill="#ff4d00"/>
+  <text x="62" y="1210" fill="#11110f" font-family="Arial, Helvetica, sans-serif" font-size="32" letter-spacing="8">het allerbeste op Netflix in België.</text>
 </svg>
