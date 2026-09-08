@@ -173,7 +173,7 @@
       cancelPoemAnimation();h.l.forEach((t,i)=>lines[i].textContent=t);
       document.getElementById('countList').innerHTML=h.b.map((row,i)=>`<div class="count-row"><strong>${[5,7,5][i]}:</strong><span>${row.map(([w,n])=>`${esc(w)}<sup>${n}</sup>`).join(' &nbsp; ')}</span></div>`).join('');
       document.getElementById('chatLink').href=h.url;document.getElementById('datasetLink').href=DATASET_URL;
-      document.getElementById('passport').innerHTML=`<dt>Herkomst</dt><dd>AI</dd><dt>Taal haiku</dt><dd>nl</dd><dt>Dataset</dt><dd>anoynsharechat/sharechat</dd><dt>Dataset-rij</dt><dd>${h.row}</dd><dt>Bericht-index</dt><dd>${h.mi}</dd><dt>Model</dt><dd>${esc(h.m)}</dd><dt>Berichttijd</dt><dd>${esc(h.mt)}</dd><dt>Chat aangemaakt</dt><dd>${esc(h.ct)}</dd><dt>SHA-256 bronbericht</dt><dd>${esc(h.sha)}</dd>`;
+      document.getElementById('passport').innerHTML=`<dt>Herkomst</dt><dd>${esc(h.origin||'AI')}</dd><dt>Taal haiku</dt><dd>nl</dd><dt>Dataset</dt><dd>anoynsharechat/sharechat</dd><dt>Dataset-rij</dt><dd>${h.row}</dd><dt>Bericht-index</dt><dd>${h.mi}</dd><dt>Model</dt><dd>${esc(h.m)}</dd><dt>Berichttijd</dt><dd>${esc(h.mt)}</dd><dt>Chat aangemaakt</dt><dd>${esc(h.ct)}</dd><dt>SHA-256 bronbericht</dt><dd>${esc(h.sha)}</dd>`;
       requestAnimationFrame(()=>{fitHaiku();requestAnimationFrame(playPoem)});
     }
 
@@ -195,7 +195,44 @@
     document.addEventListener('keydown',e=>{if(e.key==='Escape'&&methodModal.classList.contains('is-open'))hideMethod()});
 
     let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(fitHaiku,100)});
-    fetch('haikus.json').then(r=>{if(!r.ok)throw new Error('data');return r.json()}).then(data=>{haikus=data;render()}).catch(()=>{cancelPoemAnimation();lines[0].textContent='Haiku’s konden niet laden';lines[1].textContent='probeer de pagina';lines[2].textContent='opnieuw te openen';fitHaiku();playPoem()});
+    fetch('haikus.json').then(r=>{if(!r.ok)throw new Error('data');return r.json()}).then(data=>{
+      const shuffle=a=>{
+        const x=[...a];
+        for(let i=x.length-1;i>0;i--){
+          const j=Math.floor(Math.random()*(i+1));
+          [x[i],x[j]]=[x[j],x[i]];
+        }
+        return x;
+      };
+
+      const ranked=[...data].sort(
+        (a,b)=>(a.rank??999999)-(b.rank??999999)
+      );
+
+      const topCount=Math.max(
+        1,
+        Math.ceil(ranked.length*.10)
+      );
+
+      const topPool=ranked.slice(0,topCount);
+
+      const starters=shuffle(topPool).slice(
+        0,
+        Math.min(3,topPool.length)
+      );
+
+      const starterIds=new Set(
+        starters.map(h=>h.id)
+      );
+
+      const rest=shuffle(
+        ranked.filter(h=>!starterIds.has(h.id))
+      );
+
+      haikus=[...starters,...rest];
+      index=0;
+      render();
+    }).catch(()=>{cancelPoemAnimation();lines[0].textContent='Haiku’s konden niet laden';lines[1].textContent='probeer de pagina';lines[2].textContent='opnieuw te openen';fitHaiku();playPoem()});
   </script>
 </body>
 </html>
