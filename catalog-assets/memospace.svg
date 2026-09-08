@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
+  <rect width="1200" height="1200" fill="#f2f0e9"/>
+  <g fill="#11110f" font-family="Arial, Helvetica, sans-serif" font-weight="800" letter-spacing="-12">
+    <text x="58" y="560" font-size="330">Memo</text>
+    <text x="58" y="855" font-size="330">Space</text>
+  </g>
+  <circle cx="855" cy="818" r="48" fill="#ff4d00"/>
+  <text x="62" y="1018" fill="#11110f" font-family="Arial, Helvetica, sans-serif" font-size="44" letter-spacing="13">onthou alles wat je wil.</text>
+</svg>
