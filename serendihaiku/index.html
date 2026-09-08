@@ -12,6 +12,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Serendihaiku — Rakkejak">
   <meta name="twitter:description" content="We verzamelen onbedoelde Haiku's in openbare teksten">
+  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "94ee244a1d5c4600a18bad1ca5350a9c"}'></script><!-- End Cloudflare Web Analytics -->
   <title>Serendihaiku — Rakkejak</title>
   <style>
     :root{--paper:#f2f0e9;--ink:#11110f;--accent:#ff4d00;--muted:#66625b}
@@ -225,29 +226,12 @@
         return x;
       };
 
-      const ranked=[...data].sort(
-        (a,b)=>(a.rank??999999)-(b.rank??999999)
-      );
-
-      const topCount=Math.max(
-        1,
-        Math.ceil(ranked.length*.10)
-      );
-
+      const ranked=[...data].sort((a,b)=>(a.rank??999999)-(b.rank??999999));
+      const topCount=Math.max(1,Math.ceil(ranked.length*.10));
       const topPool=ranked.slice(0,topCount);
-
-      const starters=shuffle(topPool).slice(
-        0,
-        Math.min(3,topPool.length)
-      );
-
-      const starterIds=new Set(
-        starters.map(h=>h.id)
-      );
-
-      const rest=shuffle(
-        ranked.filter(h=>!starterIds.has(h.id))
-      );
+      const starters=shuffle(topPool).slice(0,Math.min(3,topPool.length));
+      const starterIds=new Set(starters.map(h=>h.id));
+      const rest=shuffle(ranked.filter(h=>!starterIds.has(h.id)));
 
       haikus=[...starters,...rest];
       index=0;
