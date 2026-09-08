@@ -87,7 +87,7 @@
 
     <section class="hero" aria-labelledby="haiku-title">
       <div class="haiku-wrap">
-        <p class="eyebrow">ongeplande Haiku, gevonden op de vreemdste plekken</p>
+        <p class="eyebrow">We verzamelen onbedoelde Haiku's in openbare teksten</p>
         <div class="haiku-row">
           <h1 class="haiku" id="haiku-title">
             <span class="haiku-line"></span>
@@ -141,7 +141,7 @@
     const haikuEl=document.getElementById('haiku-title');
     const lines=[...document.querySelectorAll('.haiku-line')];
     let animations=[];let haikus=[];let index=0;
-    const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#39;'}[c]));
 
     function cancelPoemAnimation(){animations.forEach(a=>a.cancel());animations=[];lines.forEach(line=>{line.style.opacity='0';line.style.transform='translateY(18px)'})}
     function playPoem(){cancelPoemAnimation();if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){lines.forEach(line=>{line.style.opacity='1';line.style.transform='none'});return}lines.forEach((line,i)=>{animations.push(line.animate([{opacity:0,transform:'translateY(18px)'},{opacity:1,transform:'translateY(0)'}],{duration:560,delay:350+(i*1050),easing:'cubic-bezier(.2,.75,.25,1)',fill:'forwards'}))})}
