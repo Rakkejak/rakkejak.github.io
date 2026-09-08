@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
-  <rect width="1200" height="1200" fill="#f2f0e9"/>
-  <g fill="#11110f" font-family="Arial, Helvetica, sans-serif" font-weight="800" letter-spacing="-12">
-    <text x="58" y="560" font-size="360">Serendi</text>
-    <text x="58" y="865" font-size="360">haiku</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1400">
+  <rect width="1000" height="1400" fill="#f2f0e9"/>
+  <g fill="#11110f" font-family="Arial, Helvetica, sans-serif" font-weight="800" letter-spacing="-10">
+    <text x="58" y="430" font-size="225">Serendi</text>
+    <text x="58" y="700" font-size="225">haiku</text>
   </g>
-  <circle cx="895" cy="825" r="48" fill="#ff4d00"/>
-  <text x="62" y="1018" fill="#11110f" font-family="Arial, Helvetica, sans-serif" font-size="44" letter-spacing="14">de wereld zit vol poëzie.</text>
+  <circle cx="690" cy="668" r="30" fill="#ff4d00"/>
+  <text x="62" y="1210" fill="#11110f" font-family="Arial, Helvetica, sans-serif" font-size="38" letter-spacing="11">de wereld zit vol poëzie.</text>
 </svg>
