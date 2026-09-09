@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Blok per Blok</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
+<link rel="shortcut icon" href="/favicon.ico?v=2">
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "94ee244a1d5c4600a18bad1ca5350a9c"}'></script><!-- End Cloudflare Web Analytics -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<button class="helpBtn" id="helpBtn" aria-label="Instellingen">?</button>
+<main class="app">
+  <div class="steps" id="steps"></div>
+
+  <section class="main">
+    <div class="content" id="content">
+      <div class="eyebrow" id="blockLabel">Block 1 of 5</div>
+      <h1 id="title">DUOLINGO</h1>
+
+      <div class="progressWrap" aria-label="Progress">
+        <div class="progress" id="progress"></div>
+      </div>
+
+      <div class="subrow">
+        <div class="wrap" id="wrap">WRAP UP</div>
+        <div class="next" id="next">Next: <strong>Words &amp; Phrases</strong></div>
+      </div>
+    </div>
+
+    <div class="transitionScreen" id="transitionScreen">
+      <div class="transitionWash"></div>
+      <div class="transitionCard">
+        <div class="transitionOldWrap">
+          <div class="transitionOld"><span id="transitionOld">DUOLINGO</span><span class="transitionTick">✓</span></div>
+        </div>
+        <div class="transitionNewWrap">
+          <div>
+            <div class="transitionMeta" id="transitionMeta">BLOCK 2 OF 5</div>
+            <div class="transitionNew" id="transitionNew">WORDS &amp; PHRASES</div>
+            <div class="transitionArrow">→</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="controls">
+    <button class="primary" id="startBtn">START</button>
+    <button class="iconish" id="pauseBtn">PAUSE</button>
+    <button class="iconish" id="plusBtn">+1 MIN</button>
+    <button class="iconish" id="nextBtn">NEXT</button>
+    <button class="iconish" id="miniBtn">MINI</button>
+    <button class="iconish" id="popBtn">POP OUT</button>
+    <button class="iconish" id="resetBtn">RESET</button>
+  </div>
+
+  <div class="footerline">
+    <div id="lessonSummary">5 × 10 min</div>
+    <div class="sound" id="soundToggle"><span class="dot" id="soundDot"></span><span id="soundLabel">Sound on</span></div>
+  </div>
+</main>
+
+<div class="modalBackdrop" id="modalBackdrop">
+  <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modalHeader">
+      <div>
+        <h2 class="modalTitle" id="modalTitle">Speel deze pagina af tijdens je les om de verschillende lesblokken te tonen.</h2>
+        <p class="modalIntro">Dit is een voorbeeld voor een les Engels. Vul hier je eigen les aan:</p>
+      </div>
+      <button class="closeBtn" id="closeModalBtn" aria-label="Sluiten">×</button>
+    </div>
+
+    <div class="lessonIdentity">
+      <div class="fieldCard">
+        <label for="lessonNameInput">Naam van je les</label>
+        <input id="lessonNameInput" type="text" maxlength="50" placeholder="bv. Engels 5 COM">
+      </div>
+      <div class="fieldCard">
+        <label for="lessonSlugInput">Adres op dit toestel</label>
+        <div class="slugWrap"><span class="slugPrefix">rakkejak.be/blokperblok/</span><input id="lessonSlugInput" type="text" maxlength="32" placeholder="nico"></div>
+        <p class="localNote">Wordt alleen in deze browser bewaard. Geen account nodig.</p>
+      </div>
+    </div>
+
+    <div class="countRow">
+      <label for="blockCountInput">Aantal lesblokken</label>
+      <div class="countControl">
+        <input id="blockCountInput" type="number" min="1" max="8" step="1" value="5">
+      </div>
+    </div>
+
+    <div class="editGrid" id="editGrid"></div>
+
+    <div class="savedLessons" id="savedLessons">
+      <div class="savedLessonsTitle">Mijn lessen op dit toestel</div>
+      <div class="savedLessonList" id="savedLessonList"></div>
+    </div>
+
+    <div class="modalActions">
+      <button id="resetExampleBtn">HERSTEL VOORBEELD</button>
+      <div class="modalActionsRight">
+        <button id="useOnceBtn">GEBRUIK EENMALIG</button>
+        <button class="saveBtn" id="saveEditBtn">BEWAAR DEZE LES OP DIT TOESTEL</button>
+      </div>
+    </div>
+
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:18px;padding-top:14px;border-top:1px solid #e5e5e2;">
+      <span style="color:#777b80;font-size:13px;line-height:1.4;">Wij maken gratis websites. Content? Doneer 0,51 € om ons te steunen</span>
+      <a href="https://buy.stripe.com/5kQ7sL3uBb0Najyf3HgA801" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:10px 14px;border-radius:12px;background:#1f9d5a;color:#fff;text-decoration:none;font-weight:850;font-size:13px;white-space:nowrap;box-shadow:0 2px 0 rgba(0,0,0,.10);">Donatie</a>
+    </div>
+  </section>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="app.js?v=20260909-1735"></script>
+<script src="pip-mini.js"></script>
+</body>
+</html>
