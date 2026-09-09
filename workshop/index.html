@@ -39,12 +39,13 @@
     a{color:inherit}
 
     .page{min-height:100svh}
-    .photo-wrap{padding:14px 14px 0}
+    .photo-wrap{padding:14px 14px 0;margin:0}
     .photo{
       display:block;
       width:100%;
-      height:auto;
-      object-fit:contain;
+      height:clamp(430px,48vw,760px);
+      object-fit:cover;
+      object-position:center center;
       background:#111;
     }
     .photo-caption{
@@ -92,18 +93,25 @@
       white-space:nowrap;
     }
     .copy{
-      max-width:900px;
-      font-size:clamp(1.55rem,3.25vw,3.15rem);
-      line-height:1.1;
-      letter-spacing:-.045em;
-      font-weight:650;
+      max-width:860px;
+      font-size:clamp(1.05rem,1.45vw,1.35rem);
+      line-height:1.55;
+      letter-spacing:-.012em;
+      font-weight:400;
     }
     .copy p{margin:0}
-    .copy p+p{margin-top:1.15em}
+    .copy p+p{margin-top:1.45em}
+    .copy .lead{
+      max-width:900px;
+      font-size:clamp(1.65rem,2.65vw,2.65rem);
+      line-height:1.15;
+      letter-spacing:-.035em;
+      font-weight:800;
+    }
     .copy .meh{font-weight:800}
     .copy .rule{
       padding-left:clamp(18px,2vw,30px);
-      border-left:4px solid var(--accent);
+      border-left:3px solid var(--accent);
     }
     .pullquote{
       margin:clamp(56px,7vw,92px) 0;
@@ -141,10 +149,12 @@
 
     @media(max-width:700px){
       .photo-wrap{padding:8px 8px 0}
+      .photo{height:auto;object-fit:contain}
       .photo-caption{font-size:10px;align-items:flex-start}
       .content{width:min(100% - 28px,1040px);padding-top:58px}
       .topline{align-items:flex-start}
-      .copy{font-size:clamp(1.4rem,7vw,2.1rem);line-height:1.12}
+      .copy{font-size:1.05rem;line-height:1.52}
+      .copy .lead{font-size:clamp(1.45rem,7vw,2rem);line-height:1.16}
       .copy .rule{border-left-width:3px}
       .pullquote{font-size:clamp(2rem,11vw,3.4rem);margin:48px 0;padding:26px 0}
     }
@@ -167,7 +177,7 @@
       </div>
 
       <div class="copy">
-        <p>In 1927 verzamelt de Solvayconferentie de grootste verzameling wonderbaarlijk intellect ooit in de geschiedenis van de mensheid. Nog nooit waren zoveel Nobelprijswinnaars samengekomen. En sindsdien is dat ook niet meer gelukt.</p>
+        <p class="lead">In 1927 verzamelt de Solvayconferentie de grootste verzameling wonderbaarlijk intellect ooit in de geschiedenis van de mensheid. Nog nooit waren zoveel Nobelprijswinnaars samengekomen. En sindsdien is dat ook niet meer gelukt.</p>
 
         <p>Allemaal mensen met briljante ideeën, die de wetenschap voorgoed hebben veranderd. Het resultaat van die samenkomst? <span class="meh">Meh.</span></p>
 
