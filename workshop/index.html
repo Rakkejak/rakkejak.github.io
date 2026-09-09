@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2f0e9">
+  <meta name="description" content="Brainstorm Workshop — leer met AI betere ideeën ontwikkelen door zelf te blijven denken.">
+  <meta property="og:title" content="Brainstorm Workshop — Rakkejak">
+  <meta property="og:description" content="Leer met AI betere ideeën ontwikkelen door zelf te blijven denken.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.rakkejak.be/workshop/">
+  <title>Brainstorm Workshop — Rakkejak</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
+  <link rel="shortcut icon" href="/favicon.ico?v=2">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EX97WVPWHX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EX97WVPWHX');
+  </script>
+
+  <!-- Cloudflare Web Analytics -->
+  <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "94ee244a1d5c4600a18bad1ca5350a9c"}'></script>
+  <!-- End Cloudflare Web Analytics -->
+
+  <style>
+    :root{
+      --paper:#f2f0e9;
+      --ink:#11110f;
+      --accent:#ff4d00;
+      --muted:#6b675f;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;color-scheme:light;background:var(--paper)}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+    a{color:inherit}
+
+    .page{min-height:100svh}
+    .photo-wrap{padding:14px 14px 0}
+    .photo{
+      display:block;
+      width:100%;
+      height:auto;
+      object-fit:contain;
+      background:#111;
+    }
+    .photo-caption{
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+      padding:10px 2px 0;
+      color:var(--muted);
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:.03em;
+    }
+    .photo-caption a{
+      text-decoration:none;
+      border-bottom:1px solid currentColor;
+      padding-bottom:2px;
+    }
+
+    .content{
+      width:min(1040px, calc(100% - 48px));
+      margin:0 auto;
+      padding:clamp(74px,10vw,150px) 0 clamp(80px,10vw,140px);
+    }
+    .topline{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:24px;
+      margin-bottom:clamp(38px,5vw,64px);
+    }
+    .eyebrow{
+      margin:0;
+      color:var(--accent);
+      font-size:12px;
+      font-weight:900;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+    }
+    .back{
+      font-size:14px;
+      font-weight:800;
+      text-decoration:none;
+      border-bottom:1.5px solid currentColor;
+      padding-bottom:3px;
+      white-space:nowrap;
+    }
+    .copy{
+      max-width:900px;
+      font-size:clamp(1.55rem,3.25vw,3.15rem);
+      line-height:1.1;
+      letter-spacing:-.045em;
+      font-weight:650;
+    }
+    .copy p{margin:0}
+    .copy p+p{margin-top:1.15em}
+    .copy .meh{font-weight:800}
+    .copy .solo{font-weight:800}
+    .copy .rule{
+      padding-left:clamp(18px,2vw,30px);
+      border-left:4px solid var(--accent);
+    }
+    .cta-wrap{margin-top:clamp(58px,8vw,100px)}
+    .cta{
+      display:inline-flex;
+      align-items:center;
+      gap:18px;
+      color:var(--accent);
+      font-size:clamp(1.15rem,2vw,1.65rem);
+      font-weight:900;
+      text-decoration:none;
+      border-bottom:3px solid var(--accent);
+      padding-bottom:8px;
+      transition:color .18s ease,border-color .18s ease,transform .18s ease;
+    }
+    .cta:hover,.cta:focus-visible{
+      color:var(--ink);
+      border-color:var(--ink);
+      transform:translateX(3px);
+    }
+
+    @media(max-width:700px){
+      .photo-wrap{padding:8px 8px 0}
+      .photo-caption{font-size:10px;align-items:flex-start}
+      .content{width:min(100% - 28px,1040px);padding-top:58px}
+      .topline{align-items:flex-start}
+      .copy{font-size:clamp(1.4rem,7vw,2.1rem);line-height:1.12}
+      .copy .rule{border-left-width:3px}
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <figure class="photo-wrap">
+      <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Solvay_conference_1927_%28group_photograph%29.jpg/1280px-Solvay_conference_1927_%28group_photograph%29.jpg" alt="Groepsfoto van alle deelnemers aan de Solvayconferentie van 1927 in Brussel">
+      <figcaption class="photo-caption">
+        <span>Solvayconferentie · Brussel · 1927</span>
+        <a href="https://commons.wikimedia.org/wiki/File:Solvay_conference_1927_(group_photograph).jpg" target="_blank" rel="noopener noreferrer">foto ↗</a>
+      </figcaption>
+    </figure>
+
+    <section class="content" aria-labelledby="workshop-title">
+      <div class="topline">
+        <p class="eyebrow" id="workshop-title">Brainstorm Workshop</p>
+        <a class="back" href="/">rakkejak ↗</a>
+      </div>
+
+      <div class="copy">
+        <p>In 1927 verzamelt de Solvayconferentie de grootste verzameling wonderbaarlijk intellect ooit in de geschiedenis van de mensheid. Nog nooit waren zoveel Nobelprijswinnaars samengekomen. En sindsdien is dat ook niet meer gelukt.</p>
+
+        <p>Allemaal mensen met briljante ideeën, die de wetenschap voorgoed hebben veranderd. Het resultaat van die samenkomst? <span class="meh">Meh.</span></p>
+
+        <p>Het is de ultieme illustratie van dit principe: groepen hebben geen ideeën, mensen hebben ideeën. <span class="solo">Solo.</span></p>
+
+        <p>Feedback op ideeën kan enorm vruchtbaar zijn, maar effectief brainstormen gebeurt best alleen.</p>
+
+        <p>Met de LLM's hebben we nu een nieuwe tool die ons kan helpen om tot betere ideeën te komen.</p>
+
+        <p class="rule">De eerste regel is dit: vraag enkel aan je AI om ideeën als je wilt weten wat de middelmatige ideeën zijn. AI is getraind op het gemiddelde van het gemiddelde.</p>
+
+        <p class="rule">De tweede regel is: verplicht je AI om enkel vragen te stellen aan jou, zodat jij zelf met de ideeën komt.</p>
+
+        <p>Hoe je dat moet doen? Dat leg ik uit in een workshop van 2 tot 4 uur. Wil je met een concreet probleem aan de slag? Dan nemen we wat meer tijd. Wil je gewoon de basics? Dan lukt dat sneller.</p>
+
+        <p>Zie het als een extra tool om je creatief momentum te optimaliseren.</p>
+
+        <p>Let op: het is even inspannend als fascinerend.</p>
+      </div>
+
+      <div class="cta-wrap">
+        <a class="cta" href="mailto:tom@rakkejak.be?subject=Brainstorm%20Workshop">begin nu te brainstormen met AI <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
