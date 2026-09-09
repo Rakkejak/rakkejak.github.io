@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1400">
+  <rect width="1000" height="1400" fill="#f2f0e9"/>
+  <g fill="#11110f" font-family="Arial, Helvetica, sans-serif" font-weight="800" letter-spacing="-10">
+    <text x="58" y="420" font-size="205">Blok</text>
+    <text x="58" y="660" font-size="205">perblok</text>
+  </g>
+  <circle cx="810" cy="628" r="28" fill="#ff4d00"/>
+  <text x="62" y="1210" fill="#11110f" font-family="Arial, Helvetica, sans-serif" font-size="34" letter-spacing="9">weten wat er komt, wanneer het komt.</text>
+</svg>
