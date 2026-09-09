@@ -40,6 +40,7 @@
 
     .page{min-height:100svh}
     .photo-wrap{padding:14px 14px 0;margin:0}
+    .photo-link{position:relative;display:block;text-decoration:none;overflow:hidden}
     .photo{
       display:block;
       width:100%;
@@ -47,6 +48,24 @@
       object-fit:cover;
       object-position:center 78%;
       background:#111;
+    }
+    .photo-arrow{
+      position:absolute;
+      left:50%;
+      bottom:18px;
+      transform:translateX(-50%);
+      color:var(--accent);
+      font-size:clamp(2rem,2.8vw,2.8rem);
+      line-height:1;
+      font-weight:400;
+      opacity:.9;
+      transition:transform .18s ease,opacity .18s ease;
+      text-shadow:0 1px 0 rgba(0,0,0,.08);
+    }
+    .photo-link:hover .photo-arrow,
+    .photo-link:focus-visible .photo-arrow{
+      transform:translateX(-50%) translateY(4px);
+      opacity:1;
     }
     .photo-caption{
       display:flex;
@@ -98,6 +117,7 @@
       line-height:1.55;
       letter-spacing:-.012em;
       font-weight:400;
+      scroll-margin-top:32px;
     }
     .copy p{margin:0}
     .copy p+p{margin-top:1.45em}
@@ -153,6 +173,7 @@
     @media(max-width:700px){
       .photo-wrap{padding:8px 8px 0}
       .photo{height:auto;object-fit:contain}
+      .photo-arrow{bottom:12px;font-size:2rem}
       .photo-caption{font-size:10px;align-items:flex-start}
       .content{width:min(100% - 28px,1040px);padding-top:58px}
       .topline{align-items:flex-start}
@@ -166,7 +187,10 @@
 <body>
   <main class="page">
     <figure class="photo-wrap">
-      <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Solvay_conference_1927_%28group_photograph%29.jpg/1280px-Solvay_conference_1927_%28group_photograph%29.jpg" alt="Groepsfoto van alle deelnemers aan de Solvayconferentie van 1927 in Brussel">
+      <a class="photo-link" href="#workshop-copy" aria-label="Ga naar de workshoptekst">
+        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Solvay_conference_1927_%28group_photograph%29.jpg/1280px-Solvay_conference_1927_%28group_photograph%29.jpg" alt="Groepsfoto van alle deelnemers aan de Solvayconferentie van 1927 in Brussel">
+        <span class="photo-arrow" aria-hidden="true">↓</span>
+      </a>
       <figcaption class="photo-caption">
         <span>Solvayconferentie · Brussel · 1927</span>
         <a href="https://commons.wikimedia.org/wiki/File:Solvay_conference_1927_(group_photograph).jpg" target="_blank" rel="noopener noreferrer">foto ↗</a>
@@ -179,7 +203,7 @@
         <a class="back" href="/">rakkejak ↗</a>
       </div>
 
-      <div class="copy">
+      <div class="copy" id="workshop-copy">
         <p class="lead">In 1927 verzamelt de Solvayconferentie de grootste verzameling wonderbaarlijk intellect ooit in de geschiedenis van de mensheid. Nog nooit waren zoveel Nobelprijswinnaars samengekomen. En sindsdien is dat ook niet meer gelukt.</p>
 
         <p>Allemaal mensen met briljante ideeën, die de wetenschap voorgoed hebben veranderd. Het resultaat van die samenkomst? <span class="meh">Meh.</span></p>
