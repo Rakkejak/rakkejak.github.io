@@ -101,10 +101,24 @@
     .copy p{margin:0}
     .copy p+p{margin-top:1.15em}
     .copy .meh{font-weight:800}
-    .copy .solo{font-weight:800}
     .copy .rule{
       padding-left:clamp(18px,2vw,30px);
       border-left:4px solid var(--accent);
+    }
+    .pullquote{
+      margin:clamp(56px,7vw,92px) 0;
+      padding:clamp(28px,4vw,52px) 0;
+      border-top:2px solid var(--ink);
+      border-bottom:2px solid var(--ink);
+      font-size:clamp(2.35rem,5.5vw,5.8rem);
+      line-height:.96;
+      letter-spacing:-.065em;
+      font-weight:800;
+      max-width:none;
+    }
+    .pullquote .solo{
+      color:var(--accent);
+      white-space:nowrap;
     }
     .cta-wrap{margin-top:clamp(58px,8vw,100px)}
     .cta{
@@ -132,6 +146,7 @@
       .topline{align-items:flex-start}
       .copy{font-size:clamp(1.4rem,7vw,2.1rem);line-height:1.12}
       .copy .rule{border-left-width:3px}
+      .pullquote{font-size:clamp(2rem,11vw,3.4rem);margin:48px 0;padding:26px 0}
     }
   </style>
 </head>
@@ -156,7 +171,7 @@
 
         <p>Allemaal mensen met briljante ideeën, die de wetenschap voorgoed hebben veranderd. Het resultaat van die samenkomst? <span class="meh">Meh.</span></p>
 
-        <p>Het is de ultieme illustratie van dit principe: groepen hebben geen ideeën, mensen hebben ideeën. <span class="solo">Solo.</span></p>
+        <blockquote class="pullquote">Het is de ultieme illustratie van dit principe: groepen hebben geen ideeën, mensen hebben ideeën. <span class="solo">Solo.</span></blockquote>
 
         <p>Feedback op ideeën kan enorm vruchtbaar zijn, maar effectief brainstormen gebeurt best alleen.</p>
 
@@ -164,7 +179,7 @@
 
         <p class="rule">De eerste regel is dit: vraag enkel aan je AI om ideeën als je wilt weten wat de middelmatige ideeën zijn. AI is getraind op het gemiddelde van het gemiddelde.</p>
 
-        <p class="rule">De tweede regel is: verplicht je AI om enkel vragen te stellen aan jou, zodat jij zelf met de ideeën komt.</p>
+        <p class="rule">De tweede regel is: verplicht je AI om enkel vragen te stellen, zodat jij zelf met de ideeën komt.</p>
 
         <p>Hoe je dat moet doen? Dat leg ik uit in een workshop van 2 tot 4 uur. Wil je met een concreet probleem aan de slag? Dan nemen we wat meer tijd. Wil je gewoon de basics? Dan lukt dat sneller.</p>
 
