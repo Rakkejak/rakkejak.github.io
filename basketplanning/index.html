@@ -450,16 +450,37 @@ async function saveName(matchId, role){
   if(button){ button.disabled = true; button.textContent = "Bewaren…"; }
 
   try{
-    const response = await fetch(API_URL, {
+    // Apps Script redirects POST responses cross-origin. Use no-cors for the
+    // write, then verify centrally via the GET endpoint that already works.
+    await fetch(API_URL, {
       method: "POST",
+      mode: "no-cors",
+      cache: "no-store",
       body: JSON.stringify({ matchId, role, name: value })
     });
-    if(!response.ok) throw new Error(`HTTP ${response.status}`);
-    const data = await response.json();
-    if(!data.ok) throw new Error(data.error || "Onbekende fout");
 
-    if(value) assignments[sk] = value;
-    else delete assignments[sk];
+    await new Promise(resolve => setTimeout(resolve, 600));
+
+    const checkResponse = await fetch(`${API_URL}?t=${Date.now()}`, {
+      cache: "no-store"
+    });
+    if(!checkResponse.ok) throw new Error(`Controle mislukt: HTTP ${checkResponse.status}`);
+
+    const checkData = await checkResponse.json();
+    if(!checkData.ok) throw new Error(checkData.error || "Controle mislukt");
+
+    const remoteAssignments = {};
+    for(const [key, remoteValue] of Object.entries(checkData.assignments || {})){
+      remoteAssignments[key] =
+        typeof remoteValue === "string" ? remoteValue : (remoteValue?.name || "");
+    }
+
+    const remoteName = (remoteAssignments[sk] || "").trim();
+    if(remoteName !== value){
+      throw new Error("De opgeslagen naam werd niet teruggevonden in Google Sheets.");
+    }
+
+    assignments = remoteAssignments;
     editKey = null;
     render();
     toast("Bewaard");
@@ -478,7 +499,7 @@ function handleKey(event, matchId, role){
   if(event.key === "Escape") cancelEdit();
 }
 function safeId(s){ return btoa(unescape(encodeURIComponent(s))).replace(/[^a-zA-Z0-9]/g,""); }
-function escapeHtml(s){ return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c])); }
+function escapeHtml(s){ return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#039;'}[c])); }
 function escapeAttr(s){ return escapeHtml(s); }
 let toastTimer;
 function toast(message){
