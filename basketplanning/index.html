@@ -19,11 +19,11 @@
 <div class="toast" id="toast"></div>
 <script>
 const API_URL='https://script.google.com/macros/s/AKfycbyXOnyblRkhAP9NZAZO7jFAFpsnWv1fCf_BkK4B2MC6HAnO3aoc7JLScEgAC5WgDF1LCQ/exec';
-const matches=[{id:'2026-09-13',date:'ZO 13 SEPTEMBER',time:'16:00',place:'Beersel',type:'home',past:true,roles:['24sec','Scorebord','Delegé']},{id:'2026-09-19',date:'ZA 19 SEPTEMBER',time:'18:30',place:'Halle',type:'away',roles:['Wedstrijdblad','Delegé']},{id:'2026-09-27',date:'ZO 27 SEPTEMBER',time:'16:00',place:'Beersel',type:'home',roles:['24sec','Scorebord','Delegé']},{id:'2026-10-03',date:'ZA 3 OKTOBER',time:'20:00',place:'Dilbeek',type:'away',roles:['Wedstrijdblad','Delegé']},{id:'2026-10-11',date:'ZO 11 OKTOBER',time:'16:00',place:'Beersel',type:'home',roles:['24sec','Scorebord','Delegé']},{id:'2026-10-18',date:'ZO 18 OKTOBER',time:'13:00',place:'Boortmeerbeek',type:'away',roles:['Wedstrijdblad','Delegé']},{id:'2026-10-25',date:'ZO 25 OKTOBER',time:'16:00',place:'Beersel',type:'home',roles:['24sec','Scorebord','Delegé']},{id:'2026-11-15',date:'ZO 15 NOVEMBER',time:'13:00',place:'Machelen',type:'away',roles:['Wedstrijdblad','Delegé']},{id:'2026-11-22',date:'ZO 22 NOVEMBER',time:'16:00',place:'Beersel',type:'home',roles:['24sec','Scorebord','Delegé']},{id:'2026-11-28',date:'ZA 28 NOVEMBER',time:'18:00',place:'Londerzeel',type:'away',roles:['Wedstrijdblad','Delegé']}];
+const matches=[{id:'2026-09-13',date:'ZO 13 SEPTEMBER',time:'16:00',place:'Beersel',type:'home',past:true,roles:['24sec','Tijdwaarnemer','Delegé']},{id:'2026-09-19',date:'ZA 19 SEPTEMBER',time:'18:30',place:'Halle',type:'away',roles:['Wedstrijdblad','Delegé']},{id:'2026-09-27',date:'ZO 27 SEPTEMBER',time:'16:00',place:'Beersel',type:'home',roles:['24sec','Tijdwaarnemer','Delegé']},{id:'2026-10-03',date:'ZA 3 OKTOBER',time:'20:00',place:'Dilbeek',type:'away',roles:['Wedstrijdblad','Delegé']},{id:'2026-10-11',date:'ZO 11 OKTOBER',time:'16:00',place:'Beersel',type:'home',roles:['24sec','Tijdwaarnemer','Delegé']},{id:'2026-10-18',date:'ZO 18 OKTOBER',time:'13:00',place:'Boortmeerbeek',type:'away',roles:['Wedstrijdblad','Delegé']},{id:'2026-10-25',date:'ZO 25 OKTOBER',time:'16:00',place:'Beersel',type:'home',roles:['24sec','Tijdwaarnemer','Delegé']},{id:'2026-11-15',date:'ZO 15 NOVEMBER',time:'13:00',place:'Machelen',type:'away',roles:['Wedstrijdblad','Delegé']},{id:'2026-11-22',date:'ZO 22 NOVEMBER',time:'16:00',place:'Beersel',type:'home',roles:['24sec','Tijdwaarnemer','Delegé']},{id:'2026-11-28',date:'ZA 28 NOVEMBER',time:'18:00',place:'Londerzeel',type:'away',roles:['Wedstrijdblad','Delegé']}];
 let assignments={},filter='all',editKey=null,savingKey=null,loaded=false;
 const slotKey=(id,role)=>`${id}::${role}`;
 const safeId=s=>btoa(unescape(encodeURIComponent(s))).replace(/[^a-zA-Z0-9]/g,'');
-const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#039;'}[c]));
 function normalize(data){
   const out={};
   for(const [k,v] of Object.entries(data.assignments||{})) out[k]=typeof v==='string'?v:(v?.name||'');
@@ -35,6 +35,10 @@ function normalize(data){
     }
     if(k.endsWith('::Tafelfunctie')){
       const newKey=k.replace(/::Tafelfunctie$/,'::Wedstrijdblad');
+      if(!(newKey in out)) out[newKey]=name;
+    }
+    if(k.endsWith('::Scorebord')){
+      const newKey=k.replace(/::Scorebord$/,'::Tijdwaarnemer');
       if(!(newKey in out)) out[newKey]=name;
     }
   }
