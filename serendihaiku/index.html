@@ -197,22 +197,33 @@
       document.getElementById('countList').innerHTML=h.b.map((row,i)=>`<div class="count-row"><strong>${[5,7,5][i]}:</strong><span>${row.map(([w,n])=>`${esc(w)}<sup>${n}</sup>`).join(' &nbsp; ')}</span></div>`).join('');
       const kind=String(h.kind||h.origin||'').toLowerCase();
       const thesis=kind==='thesis';
+      const constitution=kind==='constitution';
+      const law=kind==='law';
+      const legal=constitution||law;
       const chat=kind==='public_chatgpt_share'||kind==='chatgpt'||kind==='chat'||kind==='ai'||kind==='sharechat';
       const sourceUrl=h.url||h.dataset_url||'';
       document.getElementById('foundDescription').textContent=thesis
         ? 'Gevonden in een scriptie gepubliceerd op Scriptiebank.be.'
         : chat ? 'Gevonden in een openbaar gedeelde ChatGPT-chat.'
+        : constitution ? 'Gevonden in de Belgische Grondwet.'
+        : law ? 'Gevonden in een Vlaamse wettekst.'
         : 'Gevonden in een openbare tekst.';
       const sourceLink=document.getElementById('chatLink');
       sourceLink.textContent=thesis?'Bekijk de oorspronkelijke scriptie ↗':
-        chat?'Originele gedeelde ChatGPT-chat ↗':'Bekijk de oorspronkelijke bron ↗';
+        chat?'Originele gedeelde ChatGPT-chat ↗':
+        constitution?'Bekijk de Belgische Grondwet ↗':
+        law?'Bekijk de oorspronkelijke wettekst ↗':
+        'Bekijk de oorspronkelijke bron ↗';
       sourceLink.hidden=!sourceUrl;
       if(sourceUrl)sourceLink.href=sourceUrl;
       const datasetLink=document.getElementById('datasetLink');
       datasetLink.hidden=!chat;
       if(chat)datasetLink.href=h.dataset_url||DATASET_URL;
-      const fields=[['Herkomst',thesis?'Scriptie':chat?'Openbaar gedeelde ChatGPT-chat':h.origin||h.kind],
-                    ['Taal haiku','nl']];
+      const fields=[['Herkomst',thesis?'Scriptie':
+        chat?'Openbaar gedeelde ChatGPT-chat':
+        constitution?'Belgische Grondwet':
+        law?'Vlaamse wetgeving':h.origin||h.kind],
+        ['Taal haiku','nl']];
       if(thesis){
         const doc=h.document||{};
         const meta=doc.scriptiebank||{};
@@ -232,6 +243,29 @@
         if(doc.extraction_method)
           fields.push(['Extractiemethode',doc.extraction_method]);
         if(doc.sha256)fields.push(['SHA-256 document',doc.sha256]);
+      }else if(legal){
+        const doc=h.document||{};
+        if(doc.title)fields.push(['Documenttitel',doc.title]);
+        if(doc.published_at)
+          fields.push(['Documentdatum (volgens bronmetadata)',
+            String(doc.published_at).slice(0,10)]);
+        if(doc.section_title)
+          fields.push(['Artikel / onderdeel',doc.section_title]);
+        if(doc.page_start!=null)
+          fields.push(['Pagina',doc.page_end!=null &&
+            doc.page_end!==doc.page_start
+              ? `${doc.page_start}–${doc.page_end}`
+              : doc.page_start]);
+        if(doc.page_count!=null)
+          fields.push(['Aantal pagina’s',doc.page_count]);
+        fields.push(['Officiële bron',sourceUrl]);
+        if(h.char_start!=null && h.char_end!=null)
+          fields.push(['Tekstpositie',
+            `Tekens ${h.char_start}–${h.char_end}`]);
+        if(doc.extraction_method)
+          fields.push(['Extractiemethode',doc.extraction_method]);
+        if(doc.sha256)
+          fields.push(['SHA-256 document',doc.sha256]);
       }else if(chat){
         fields.push(['Dataset',h.dataset||'anoynsharechat/sharechat'],
                     ['Dataset-rij',h.row],['Bericht-index',h.mi],
