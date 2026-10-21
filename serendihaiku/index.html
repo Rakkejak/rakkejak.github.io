@@ -265,7 +265,7 @@
     document.addEventListener('keydown',e=>{if(e.key==='Escape'&&methodModal.classList.contains('is-open'))hideMethod()});
 
     let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(fitHaiku,100)});
-    fetch('haikus.json').then(r=>{if(!r.ok)throw new Error('data');return r.json()}).then(data=>{
+    fetch('haikus.json', {cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('data');return r.json()}).then(data=>{
       const shuffle=a=>{
         const x=[...a];
         for(let i=x.length-1;i>0;i--){
