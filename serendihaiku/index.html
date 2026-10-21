@@ -197,7 +197,7 @@
       document.getElementById('countList').innerHTML=h.b.map((row,i)=>`<div class="count-row"><strong>${[5,7,5][i]}:</strong><span>${row.map(([w,n])=>`${esc(w)}<sup>${n}</sup>`).join(' &nbsp; ')}</span></div>`).join('');
       const kind=String(h.kind||h.origin||'').toLowerCase();
       const thesis=kind==='thesis';
-      const chat=kind==='chatgpt'||kind==='chat'||kind==='ai'||kind==='sharechat';
+      const chat=kind==='public_chatgpt_share'||kind==='chatgpt'||kind==='chat'||kind==='ai'||kind==='sharechat';
       const sourceUrl=h.url||h.dataset_url||'';
       document.getElementById('foundDescription').textContent=thesis
         ? 'Gevonden in een scriptie gepubliceerd op Scriptiebank.be.'
@@ -205,12 +205,12 @@
         : 'Gevonden in een openbare tekst.';
       const sourceLink=document.getElementById('chatLink');
       sourceLink.textContent=thesis?'Bekijk de oorspronkelijke scriptie ↗':
-        chat?'Bekijk de oorspronkelijke ChatGPT-chat ↗':'Bekijk de oorspronkelijke bron ↗';
+        chat?'Originele gedeelde ChatGPT-chat ↗':'Bekijk de oorspronkelijke bron ↗';
       sourceLink.hidden=!sourceUrl;
       if(sourceUrl)sourceLink.href=sourceUrl;
       const datasetLink=document.getElementById('datasetLink');
       datasetLink.hidden=!chat;
-      if(chat)datasetLink.href=DATASET_URL;
+      if(chat)datasetLink.href=h.dataset_url||DATASET_URL;
       const fields=[['Herkomst',thesis?'Scriptie':chat?'Openbaar gedeelde ChatGPT-chat':h.origin||h.kind],
                     ['Taal haiku','nl']];
       if(thesis){
