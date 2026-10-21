@@ -129,14 +129,14 @@
     <section class="analysis" id="analyse" aria-labelledby="analyse-title">
       <div class="analysis-grid">
         <div><p class="eyebrow" id="analyse-title">5 · 7 · 5</p><div class="count-list" id="countList" aria-label="Lettergreeptelling"></div></div>
-        <aside class="found"><p class="found-label">serendipiteit</p><h2>Gevonden in een openbaar gedeelde ChatGPT-chat.</h2></aside>
+        <aside class="found"><p class="found-label">serendipiteit</p><h2 id="foundDescription">Gevonden in een openbare tekst.</h2></aside>
       </div>
       <div class="source-jump-row"><a class="source-jump" href="#bron">bron ↓</a></div>
     </section>
 
     <section class="source" id="bron" aria-labelledby="source-title">
       <h2 class="source-title" id="source-title">Bron</h2>
-      <nav class="source-links" aria-label="Bronlinks"><a id="chatLink" target="_blank" rel="noopener noreferrer">Originele gedeelde ChatGPT-chat ↗</a><a id="datasetLink" target="_blank" rel="noopener noreferrer">Dataset ↗</a></nav>
+      <nav class="source-links" aria-label="Bronlinks"><a id="chatLink" target="_blank" rel="noopener noreferrer">Bekijk de oorspronkelijke bron ↗</a><a id="datasetLink" target="_blank" rel="noopener noreferrer">Dataset ↗</a></nav>
       <dl class="passport" id="passport"></dl>
       <div class="bottom-actions">
         <button class="how-button" id="openMethod" type="button">hoe vinden we Haiku's?</button>
@@ -195,8 +195,41 @@
       const h=haikus[index];if(!h)return;
       cancelPoemAnimation();h.l.forEach((t,i)=>lines[i].textContent=t);
       document.getElementById('countList').innerHTML=h.b.map((row,i)=>`<div class="count-row"><strong>${[5,7,5][i]}:</strong><span>${row.map(([w,n])=>`${esc(w)}<sup>${n}</sup>`).join(' &nbsp; ')}</span></div>`).join('');
-      document.getElementById('chatLink').href=h.url;document.getElementById('datasetLink').href=DATASET_URL;
-      document.getElementById('passport').innerHTML=`<dt>Herkomst</dt><dd>${esc(h.origin||'AI')}</dd><dt>Taal haiku</dt><dd>nl</dd><dt>Dataset</dt><dd>anoynsharechat/sharechat</dd><dt>Dataset-rij</dt><dd>${h.row}</dd><dt>Bericht-index</dt><dd>${h.mi}</dd><dt>Model</dt><dd>${esc(h.m)}</dd><dt>Berichttijd</dt><dd>${esc(h.mt)}</dd><dt>Chat aangemaakt</dt><dd>${esc(h.ct)}</dd><dt>SHA-256 bronbericht</dt><dd>${esc(h.sha)}</dd>`;
+      const kind=String(h.kind||h.origin||'').toLowerCase();
+      const thesis=kind==='thesis';
+      const chat=kind==='chatgpt'||kind==='chat'||kind==='ai'||kind==='sharechat';
+      const sourceUrl=h.url||h.dataset_url||'';
+      document.getElementById('foundDescription').textContent=thesis
+        ? 'Gevonden in een scriptie gepubliceerd op Scriptiebank.be.'
+        : chat ? 'Gevonden in een openbaar gedeelde ChatGPT-chat.'
+        : 'Gevonden in een openbare tekst.';
+      const sourceLink=document.getElementById('chatLink');
+      sourceLink.textContent=thesis?'Bekijk de oorspronkelijke scriptie ↗':
+        chat?'Bekijk de oorspronkelijke ChatGPT-chat ↗':'Bekijk de oorspronkelijke bron ↗';
+      sourceLink.hidden=!sourceUrl;
+      if(sourceUrl)sourceLink.href=sourceUrl;
+      const datasetLink=document.getElementById('datasetLink');
+      datasetLink.hidden=!chat;
+      if(chat)datasetLink.href=DATASET_URL;
+      const fields=[['Herkomst',thesis?'Scriptie':chat?'Openbaar gedeelde ChatGPT-chat':h.origin||h.kind],
+                    ['Taal haiku','nl']];
+      if(thesis){
+        fields.push(['Oorspronkelijke publicatie',sourceUrl]);
+        if(h.char_start!=null && h.char_end!=null)
+          fields.push(['Vindplaats in geëxtraheerde tekst',
+            `Tekens ${h.char_start}–${h.char_end}`]);
+      }else if(chat){
+        fields.push(['Dataset',h.dataset||'anoynsharechat/sharechat'],
+                    ['Dataset-rij',h.row],['Bericht-index',h.mi],
+                    ['Model',h.m],['Berichttijd',h.mt],['Chat aangemaakt',h.ct]);
+      }else if(sourceUrl){
+        fields.push(['Oorspronkelijke bron',sourceUrl]);
+      }
+      if(h.sha)fields.push(['SHA-256 bronbericht',h.sha]);
+      document.getElementById('passport').innerHTML=fields
+        .filter(([,value])=>value!==null && value!==undefined && value!=='')
+        .map(([label,value])=>`<dt>${esc(String(label))}</dt><dd>${esc(String(value))}</dd>`)
+        .join('');
       requestAnimationFrame(()=>{fitHaiku();requestAnimationFrame(playPoem)});
     }
 
