@@ -233,7 +233,15 @@
       const topPool=ranked.slice(0,topCount);
       const starters=shuffle(topPool).slice(0,Math.min(3,topPool.length));
       const starterIds=new Set(starters.map(h=>h.id));
-      const rest=shuffle(ranked.filter(h=>!starterIds.has(h.id)));
+      const rest=ranked
+        .filter(h=>!starterIds.has(h.id))
+        .map(h=>({
+          h,
+          key:-Math.log(1-Math.random())/
+              (h.tier===1 ? 1.33 : 1)
+        }))
+        .sort((a,b)=>a.key-b.key)
+        .map(x=>x.h);
 
       haikus=[...starters,...rest];
       index=0;
