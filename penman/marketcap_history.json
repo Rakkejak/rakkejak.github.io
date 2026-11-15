@@ -37,6 +37,12 @@
   },
   {
     "date": "2026-11-15",
+    "ticker": "360.AX",
+    "quote_currency": "AUD",
+    "marketcap_raw": 5214354432.0
+  },
+  {
+    "date": "2026-11-15",
     "ticker": "6223.TWO",
     "quote_currency": "TWD",
     "marketcap_raw": 457572712448.0
@@ -70,6 +76,12 @@
     "ticker": "ACAD",
     "quote_currency": "USD",
     "marketcap_raw": 3240543232.0
+  },
+  {
+    "date": "2026-11-15",
+    "ticker": "AEIS",
+    "quote_currency": "USD",
+    "marketcap_raw": 8893083648.0
   },
   {
     "date": "2026-11-15",
@@ -130,6 +142,18 @@
     "ticker": "CLS",
     "quote_currency": "USD",
     "marketcap_raw": 30309711872.0
+  },
+  {
+    "date": "2026-11-15",
+    "ticker": "CRDO",
+    "quote_currency": "USD",
+    "marketcap_raw": 24717555712.0
+  },
+  {
+    "date": "2026-11-15",
+    "ticker": "CSU.TO",
+    "quote_currency": "CAD",
+    "marketcap_raw": 74006970368.0
   },
   {
     "date": "2026-11-15",
@@ -196,6 +220,12 @@
     "ticker": "GEV",
     "quote_currency": "USD",
     "marketcap_raw": 212570095616.0
+  },
+  {
+    "date": "2026-11-15",
+    "ticker": "GOOGL",
+    "quote_currency": "USD",
+    "marketcap_raw": 3636196016128.0
   },
   {
     "date": "2026-11-15",
@@ -331,9 +361,21 @@
   },
   {
     "date": "2026-11-15",
+    "ticker": "PENG",
+    "quote_currency": "USD",
+    "marketcap_raw": 2870804224.0
+  },
+  {
+    "date": "2026-11-15",
     "ticker": "PGNY",
     "quote_currency": "USD",
     "marketcap_raw": 2664560640.0
+  },
+  {
+    "date": "2026-11-15",
+    "ticker": "PLTR",
+    "quote_currency": "USD",
+    "marketcap_raw": 404771504128.0
   },
   {
     "date": "2026-11-15",
@@ -367,9 +409,21 @@
   },
   {
     "date": "2026-11-15",
+    "ticker": "SMCI",
+    "quote_currency": "USD",
+    "marketcap_raw": 17710143488.0
+  },
+  {
+    "date": "2026-11-15",
     "ticker": "SNDK",
     "quote_currency": "USD",
     "marketcap_raw": 125927505920.0
+  },
+  {
+    "date": "2026-11-15",
+    "ticker": "STRL",
+    "quote_currency": "USD",
+    "marketcap_raw": 8918636544.0
   },
   {
     "date": "2026-11-15",
