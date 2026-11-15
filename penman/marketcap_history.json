@@ -31,6 +31,12 @@
   },
   {
     "date": "2026-11-15",
+    "ticker": "2382.TW",
+    "quote_currency": "TWD",
+    "marketcap_raw": 1133516816384.0
+  },
+  {
+    "date": "2026-11-15",
     "ticker": "3037.TW",
     "quote_currency": "TWD",
     "marketcap_raw": 1291827412992.0
@@ -49,9 +55,21 @@
   },
   {
     "date": "2026-11-15",
+    "ticker": "6531.TW",
+    "quote_currency": "TWD",
+    "marketcap_raw": 116844765184.0
+  },
+  {
+    "date": "2026-11-15",
     "ticker": "6857.T",
     "quote_currency": "JPY",
     "marketcap_raw": 22103606689792.0
+  },
+  {
+    "date": "2026-11-15",
+    "ticker": "688008.SS",
+    "quote_currency": "CNY",
+    "marketcap_raw": 184264622080.0
   },
   {
     "date": "2026-11-15",
@@ -376,6 +394,12 @@
     "ticker": "PLTR",
     "quote_currency": "USD",
     "marketcap_raw": 404771504128.0
+  },
+  {
+    "date": "2026-11-15",
+    "ticker": "RHM.DE",
+    "quote_currency": "EUR",
+    "marketcap_raw": 35724402688.0
   },
   {
     "date": "2026-11-15",
