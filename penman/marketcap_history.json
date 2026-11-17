@@ -981,7 +981,7 @@
     "date": "2026-11-17",
     "ticker": "000660.KS",
     "quote_currency": "KRW",
-    "marketcap_raw": 773575149617152.0
+    "marketcap_raw": 774280329560064.0
   },
   {
     "date": "2026-11-17",
@@ -993,13 +993,13 @@
     "date": "2026-11-17",
     "ticker": "1INN.DE",
     "quote_currency": "EUR",
-    "marketcap_raw": 440500000.0
+    "marketcap_raw": 426500000.0
   },
   {
     "date": "2026-11-17",
     "ticker": "2222.T",
     "quote_currency": "JPY",
-    "marketcap_raw": 453518032896.0
+    "marketcap_raw": 455217479680.0
   },
   {
     "date": "2026-11-17",
@@ -1041,25 +1041,25 @@
     "date": "2026-11-17",
     "ticker": "6857.T",
     "quote_currency": "JPY",
-    "marketcap_raw": 18767486648320.0
+    "marketcap_raw": 18781927636992.0
   },
   {
     "date": "2026-11-17",
     "ticker": "688008.SS",
     "quote_currency": "CNY",
-    "marketcap_raw": 158108483584.0
+    "marketcap_raw": 159402262528.0
   },
   {
     "date": "2026-11-17",
     "ticker": "7747.T",
     "quote_currency": "JPY",
-    "marketcap_raw": 1125240406016.0
+    "marketcap_raw": 1130016276480.0
   },
   {
     "date": "2026-11-17",
     "ticker": "8136.T",
     "quote_currency": "JPY",
-    "marketcap_raw": 1292335448064.0
+    "marketcap_raw": 1288695054336.0
   },
   {
     "date": "2026-11-17",
@@ -1101,13 +1101,13 @@
     "date": "2026-11-17",
     "ticker": "ASML",
     "quote_currency": "USD",
-    "marketcap_raw": 542201806848.0
+    "marketcap_raw": 542199906304.0
   },
   {
     "date": "2026-11-17",
     "ticker": "ATR.WA",
     "quote_currency": "PLN",
-    "marketcap_raw": 470734016.0
+    "marketcap_raw": 472580064.0
   },
   {
     "date": "2026-11-17",
@@ -1125,7 +1125,7 @@
     "date": "2026-11-17",
     "ticker": "BONEX.ST",
     "quote_currency": "SEK",
-    "marketcap_raw": 20974497792.0
+    "marketcap_raw": 20662222848.0
   },
   {
     "date": "2026-11-17",
@@ -1155,7 +1155,7 @@
     "date": "2026-11-17",
     "ticker": "DELIA.OL",
     "quote_currency": "NOK",
-    "marketcap_raw": 828140416.0
+    "marketcap_raw": 826293888.0
   },
   {
     "date": "2026-11-17",
@@ -1221,7 +1221,7 @@
     "date": "2026-11-17",
     "ticker": "HANZA.ST",
     "quote_currency": "SEK",
-    "marketcap_raw": 9913134080.0
+    "marketcap_raw": 9787651072.0
   },
   {
     "date": "2026-11-17",
@@ -1233,7 +1233,7 @@
     "date": "2026-11-17",
     "ticker": "INGRM.IS",
     "quote_currency": "TRY",
-    "marketcap_raw": 5323200000.0
+    "marketcap_raw": 5152799744.0
   },
   {
     "date": "2026-11-17",
@@ -1251,7 +1251,7 @@
     "date": "2026-11-17",
     "ticker": "LDB.MI",
     "quote_currency": "EUR",
-    "marketcap_raw": 124920000.0
+    "marketcap_raw": 126344944.0
   },
   {
     "date": "2026-11-17",
@@ -1299,7 +1299,7 @@
     "date": "2026-11-17",
     "ticker": "NEM.DE",
     "quote_currency": "EUR",
-    "marketcap_raw": 7414508544.0
+    "marketcap_raw": 7293243904.0
   },
   {
     "date": "2026-11-17",
@@ -1311,13 +1311,19 @@
     "date": "2026-11-17",
     "ticker": "NORBT.OL",
     "quote_currency": "NOK",
-    "marketcap_raw": 11292673024.0
+    "marketcap_raw": 10768027648.0
   },
   {
     "date": "2026-11-17",
     "ticker": "NVDA",
     "quote_currency": "USD",
     "marketcap_raw": 3770312556544.0
+  },
+  {
+    "date": "2026-11-17",
+    "ticker": "NXSN.TA",
+    "quote_currency": "ILS",
+    "marketcap_raw": 17308719104.0
   },
   {
     "date": "2026-11-17",
@@ -1353,13 +1359,13 @@
     "date": "2026-11-17",
     "ticker": "RHM.DE",
     "quote_currency": "EUR",
-    "marketcap_raw": 35920408576.0
+    "marketcap_raw": 34889043968.0
   },
   {
     "date": "2026-11-17",
     "ticker": "SECT-B.ST",
     "quote_currency": "SEK",
-    "marketcap_raw": 63079333888.0
+    "marketcap_raw": 62308663296.0
   },
   {
     "date": "2026-11-17",
@@ -1371,7 +1377,7 @@
     "date": "2026-11-17",
     "ticker": "SGN.WA",
     "quote_currency": "PLN",
-    "marketcap_raw": 2036721408.0
+    "marketcap_raw": 2111818496.0
   },
   {
     "date": "2026-11-17",
@@ -1393,9 +1399,21 @@
   },
   {
     "date": "2026-11-17",
+    "ticker": "SNDK",
+    "quote_currency": "USD",
+    "marketcap_raw": 115127738368.0
+  },
+  {
+    "date": "2026-11-17",
     "ticker": "STRL",
     "quote_currency": "USD",
     "marketcap_raw": 8392162816.0
+  },
+  {
+    "date": "2026-11-17",
+    "ticker": "STX",
+    "quote_currency": "USD",
+    "marketcap_raw": 114550988800.0
   },
   {
     "date": "2026-11-17",
@@ -1405,9 +1423,15 @@
   },
   {
     "date": "2026-11-17",
+    "ticker": "THEON.AS",
+    "quote_currency": "EUR",
+    "marketcap_raw": 2081005440.0
+  },
+  {
+    "date": "2026-11-17",
     "ticker": "TPRO.MI",
     "quote_currency": "EUR",
-    "marketcap_raw": 13485125632.0
+    "marketcap_raw": 13126546432.0
   },
   {
     "date": "2026-11-17",
@@ -1437,6 +1461,6 @@
     "date": "2026-11-17",
     "ticker": "VYT.MC",
     "quote_currency": "EUR",
-    "marketcap_raw": 110606016.0
+    "marketcap_raw": 112863288.0
   }
 ]
