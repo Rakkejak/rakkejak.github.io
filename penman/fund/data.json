@@ -3,12 +3,12 @@
   "name": "Rakkejak Fund",
   "summary": {
     "invested_eur": 14000.0,
-    "value_eur": 12952.34,
-    "equity_eur": 12952.34,
+    "value_eur": 13777.53,
+    "equity_eur": 13777.53,
     "cash_eur": 0.0,
-    "return_pct": -0.07483266,
-    "twr_pct": -0.01315484,
-    "xirr_pct": null,
+    "return_pct": -0.01589043,
+    "twr_pct": -0.01589043,
+    "xirr_pct": -0.9463510823981707,
     "sp500_value_eur": 13715.93,
     "world_value_eur": 13693.05,
     "sp500_twr_pct": -0.02029044,
@@ -54,8 +54,8 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 1.676659,
-      "value_eur": 986.03,
-      "return_pct": -0.01397111,
+      "value_eur": 980.43,
+      "return_pct": -0.01957357,
       "status": "GROEN"
     },
     {
@@ -143,9 +143,9 @@
       "company": "Sandisk",
       "date": "2026-11-17",
       "invested_eur": 1000.0,
-      "buy_eur": 724.882469,
-      "value_eur": 118.68,
-      "return_pct": -0.88131519,
+      "buy_eur": 90.610309,
+      "value_eur": 949.48,
+      "return_pct": -0.05052152,
       "status": "GROEN"
     },
     {
@@ -168,13 +168,13 @@
     },
     {
       "date": "2026-11-18",
-      "portfolio": -0.00487935,
+      "portfolio": -0.00619281,
       "sp500": -0.00257576,
       "world": -0.00460073
     },
     {
       "date": "2026-11-19",
-      "portfolio": -0.01315484,
+      "portfolio": -0.01589043,
       "sp500": -0.02029044,
       "world": -0.02192528
     }
@@ -469,8 +469,5 @@
       "NWG.WA": "PLN"
     }
   },
-  "warnings": [
-    "INGRM.IS: pending buy cancelled (no longer confirmed green)",
-    "STX: pending buy cancelled (no longer confirmed green)"
-  ]
+  "warnings": []
 }
