@@ -1,18 +1,18 @@
 {
-  "asof": "2026-11-19",
+  "asof": "2026-11-20",
   "name": "Rakkejak Fund",
   "summary": {
-    "invested_eur": 14000.0,
-    "value_eur": 13777.53,
-    "equity_eur": 13777.53,
+    "invested_eur": 15000.0,
+    "value_eur": 13823.77,
+    "equity_eur": 13823.77,
     "cash_eur": 0.0,
-    "return_pct": -0.01589043,
-    "twr_pct": -0.01589043,
-    "xirr_pct": -0.9463510823981707,
-    "sp500_value_eur": 13715.93,
-    "world_value_eur": 13693.05,
-    "sp500_twr_pct": -0.02029044,
-    "world_twr_pct": -0.02192528,
+    "return_pct": -0.07841511,
+    "twr_pct": -0.08401619,
+    "xirr_pct": null,
+    "sp500_value_eur": 14219.39,
+    "world_value_eur": 14238.22,
+    "sp500_twr_pct": -0.05575819,
+    "world_twr_pct": -0.05441306,
     "dividends_eur": 0.0,
     "sale_proceeds_eur": 0.0,
     "realized_gain_eur": 0.0
@@ -24,8 +24,8 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 748.236762,
-      "value_eur": 1083.26,
-      "return_pct": 0.0832599,
+      "value_eur": 1017.15,
+      "return_pct": 0.01715459,
       "status": "GROEN"
     },
     {
@@ -34,8 +34,18 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 129.680743,
-      "value_eur": 1040.3,
-      "return_pct": 0.04029663,
+      "value_eur": 965.48,
+      "return_pct": -0.03451908,
+      "status": "GROEN"
+    },
+    {
+      "ticker": "ACAD",
+      "company": "ACADIA Pharmaceuticals",
+      "date": "2026-11-20",
+      "invested_eur": 1000.0,
+      "buy_eur": 15.597477,
+      "value_eur": 1000.0,
+      "return_pct": -0.0,
       "status": "GROEN"
     },
     {
@@ -44,8 +54,8 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 0.534222,
-      "value_eur": 988.28,
-      "return_pct": -0.01171624,
+      "value_eur": 1035.29,
+      "return_pct": 0.03528632,
       "status": "GROEN"
     },
     {
@@ -54,8 +64,8 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 1.676659,
-      "value_eur": 980.43,
-      "return_pct": -0.01957357,
+      "value_eur": 974.03,
+      "return_pct": -0.02597176,
       "status": "GROEN"
     },
     {
@@ -64,8 +74,8 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 6.210109,
-      "value_eur": 983.31,
-      "return_pct": -0.01669254,
+      "value_eur": 910.12,
+      "return_pct": -0.08988394,
       "status": "GROEN"
     },
     {
@@ -74,8 +84,8 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 509.147082,
-      "value_eur": 957.96,
-      "return_pct": -0.04204292,
+      "value_eur": 824.57,
+      "return_pct": -0.1754283,
       "status": "GROEN"
     },
     {
@@ -84,8 +94,8 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 69.756892,
-      "value_eur": 995.59,
-      "return_pct": -0.00440755,
+      "value_eur": 974.63,
+      "return_pct": -0.02537042,
       "status": "GROEN"
     },
     {
@@ -94,8 +104,8 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 647.760727,
-      "value_eur": 971.46,
-      "return_pct": -0.02853962,
+      "value_eur": 836.66,
+      "return_pct": -0.16334025,
       "status": "GROEN"
     },
     {
@@ -104,8 +114,8 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 7.27392,
-      "value_eur": 991.11,
-      "return_pct": -0.00889029,
+      "value_eur": 948.08,
+      "return_pct": -0.05192052,
       "status": "GROEN"
     },
     {
@@ -114,8 +124,8 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 27.85002,
-      "value_eur": 918.61,
-      "return_pct": -0.08139107,
+      "value_eur": 891.96,
+      "return_pct": -0.10804012,
       "status": "GROEN"
     },
     {
@@ -124,8 +134,8 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 39.85199,
-      "value_eur": 972.2,
-      "return_pct": -0.02780174,
+      "value_eur": 824.63,
+      "return_pct": -0.17536916,
       "status": "GROEN"
     },
     {
@@ -134,8 +144,8 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 21.949052,
-      "value_eur": 989.93,
-      "return_pct": -0.01007056,
+      "value_eur": 899.18,
+      "return_pct": -0.10082042,
       "status": "GROEN"
     },
     {
@@ -144,8 +154,8 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 90.610309,
-      "value_eur": 949.48,
-      "return_pct": -0.05052152,
+      "value_eur": 797.21,
+      "return_pct": -0.20279288,
       "status": "GROEN"
     },
     {
@@ -154,8 +164,8 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 62.5648,
-      "value_eur": 955.63,
-      "return_pct": -0.04437495,
+      "value_eur": 924.79,
+      "return_pct": -0.07521077,
       "status": "GROEN"
     }
   ],
@@ -177,17 +187,15 @@
       "portfolio": -0.01589043,
       "sp500": -0.02029044,
       "world": -0.02192528
+    },
+    {
+      "date": "2026-11-20",
+      "portfolio": -0.08401619,
+      "sp500": -0.05575819,
+      "world": -0.05441306
     }
   ],
   "pending_orders": [
-    {
-      "id": "BUY-2026-11-19-ACAD",
-      "ticker": "ACAD",
-      "company": "ACADIA Pharmaceuticals",
-      "side": "BUY",
-      "signal_date": "2026-11-19",
-      "initial": false
-    },
     {
       "id": "BUY-2026-11-20-1INN.DE",
       "ticker": "1INN.DE",
@@ -234,6 +242,30 @@
       "company": "Newag",
       "side": "BUY",
       "signal_date": "2026-11-20",
+      "initial": false
+    },
+    {
+      "id": "BUY-2026-11-21-ATR.WA",
+      "ticker": "ATR.WA",
+      "company": "Atrem",
+      "side": "BUY",
+      "signal_date": "2026-11-21",
+      "initial": false
+    },
+    {
+      "id": "BUY-2026-11-21-SEZL",
+      "ticker": "SEZL",
+      "company": "Sezzle",
+      "side": "BUY",
+      "signal_date": "2026-11-21",
+      "initial": false
+    },
+    {
+      "id": "BUY-2026-11-21-STX",
+      "ticker": "STX",
+      "company": "Seagate Technology",
+      "side": "BUY",
+      "signal_date": "2026-11-21",
       "initial": false
     }
   ],
@@ -433,6 +465,20 @@
       "fx_per_eur": 1.09981966,
       "amount_eur": 1000.0,
       "reason": ""
+    },
+    {
+      "id": "BUY-2026-11-19-ACAD",
+      "ticker": "ACAD",
+      "company": "ACADIA Pharmaceuticals",
+      "side": "BUY",
+      "date": "2026-11-20",
+      "signal_date": "2026-11-19",
+      "shares": 64.112934376,
+      "price_local": 17.11000061,
+      "currency": "USD",
+      "fx_per_eur": 1.096972346,
+      "amount_eur": 1000.0,
+      "reason": ""
     }
   ],
   "methodology": {
@@ -466,7 +512,9 @@
       "51R.F": "EUR",
       "CELH": "USD",
       "MOD": "USD",
-      "NWG.WA": "PLN"
+      "NWG.WA": "PLN",
+      "ATR.WA": "PLN",
+      "SEZL": "USD"
     }
   },
   "warnings": []
