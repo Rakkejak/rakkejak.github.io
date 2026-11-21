@@ -25,6 +25,9 @@
       "invested_eur": 1000.0,
       "buy_eur": 748.236762,
       "value_eur": 1017.15,
+      "current_price_eur": 761.072458,
+      "current_price_local": 1113000.0,
+      "currency": "KRW",
       "return_pct": 0.01715459,
       "status": "GROEN"
     },
@@ -35,6 +38,9 @@
       "invested_eur": 1000.0,
       "buy_eur": 129.680743,
       "value_eur": 965.48,
+      "current_price_eur": 125.204283,
+      "current_price_local": 183100.0,
+      "currency": "KRW",
       "return_pct": -0.03451908,
       "status": "GROEN"
     },
@@ -45,6 +51,9 @@
       "invested_eur": 1000.0,
       "buy_eur": 15.597477,
       "value_eur": 1000.0,
+      "current_price_eur": 15.597477,
+      "current_price_local": 17.110001,
+      "currency": "USD",
       "return_pct": -0.0,
       "status": "GROEN"
     },
@@ -55,6 +64,9 @@
       "invested_eur": 1000.0,
       "buy_eur": 0.534222,
       "value_eur": 1035.29,
+      "current_price_eur": 0.553073,
+      "current_price_local": 0.87,
+      "currency": "CAD",
       "return_pct": 0.03528632,
       "status": "GROEN"
     },
@@ -65,6 +77,9 @@
       "invested_eur": 1000.0,
       "buy_eur": 1.676659,
       "value_eur": 974.03,
+      "current_price_eur": 1.633113,
+      "current_price_local": 17.5,
+      "currency": "NOK",
       "return_pct": -0.02597176,
       "status": "GROEN"
     },
@@ -75,6 +90,9 @@
       "invested_eur": 1000.0,
       "buy_eur": 6.210109,
       "value_eur": 910.12,
+      "current_price_eur": 5.65192,
+      "current_price_local": 6.2,
+      "currency": "USD",
       "return_pct": -0.08988394,
       "status": "GROEN"
     },
@@ -85,6 +103,9 @@
       "invested_eur": 1000.0,
       "buy_eur": 509.147082,
       "value_eur": 824.57,
+      "current_price_eur": 419.828276,
+      "current_price_local": 460.540009,
+      "currency": "USD",
       "return_pct": -0.1754283,
       "status": "GROEN"
     },
@@ -95,6 +116,9 @@
       "invested_eur": 1000.0,
       "buy_eur": 69.756892,
       "value_eur": 974.63,
+      "current_price_eur": 67.98713,
+      "current_price_local": 74.580002,
+      "currency": "USD",
       "return_pct": -0.02537042,
       "status": "GROEN"
     },
@@ -105,6 +129,9 @@
       "invested_eur": 1000.0,
       "buy_eur": 647.760727,
       "value_eur": 836.66,
+      "current_price_eur": 541.95533,
+      "current_price_local": 594.51001,
+      "currency": "USD",
       "return_pct": -0.16334025,
       "status": "GROEN"
     },
@@ -115,6 +142,9 @@
       "invested_eur": 1000.0,
       "buy_eur": 7.27392,
       "value_eur": 948.08,
+      "current_price_eur": 6.896254,
+      "current_price_local": 7.565,
+      "currency": "USD",
       "return_pct": -0.05192052,
       "status": "GROEN"
     },
@@ -125,6 +155,9 @@
       "invested_eur": 1000.0,
       "buy_eur": 27.85002,
       "value_eur": 891.96,
+      "current_price_eur": 24.8411,
+      "current_price_local": 27.25,
+      "currency": "USD",
       "return_pct": -0.10804012,
       "status": "GROEN"
     },
@@ -135,6 +168,9 @@
       "invested_eur": 1000.0,
       "buy_eur": 39.85199,
       "value_eur": 824.63,
+      "current_price_eur": 32.86318,
+      "current_price_local": 36.049999,
+      "currency": "USD",
       "return_pct": -0.17536916,
       "status": "GROEN"
     },
@@ -145,6 +181,9 @@
       "invested_eur": 1000.0,
       "buy_eur": 21.949052,
       "value_eur": 899.18,
+      "current_price_eur": 19.73614,
+      "current_price_local": 21.65,
+      "currency": "USD",
       "return_pct": -0.10082042,
       "status": "GROEN"
     },
@@ -155,6 +194,9 @@
       "invested_eur": 1000.0,
       "buy_eur": 90.610309,
       "value_eur": 797.21,
+      "current_price_eur": 72.235183,
+      "current_price_local": 79.239998,
+      "currency": "USD",
       "return_pct": -0.20279288,
       "status": "GROEN"
     },
@@ -165,6 +207,9 @@
       "invested_eur": 1000.0,
       "buy_eur": 62.5648,
       "value_eur": 924.79,
+      "current_price_eur": 57.859254,
+      "current_price_local": 63.470001,
+      "currency": "USD",
       "return_pct": -0.07521077,
       "status": "GROEN"
     }
