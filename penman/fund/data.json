@@ -3,11 +3,11 @@
   "name": "Rakkejak Fund",
   "summary": {
     "invested_eur": 15000.0,
-    "value_eur": 13823.77,
-    "equity_eur": 13823.77,
+    "value_eur": 13810.42,
+    "equity_eur": 13810.42,
     "cash_eur": 0.0,
-    "return_pct": -0.07841511,
-    "twr_pct": -0.08401619,
+    "return_pct": -0.07930565,
+    "twr_pct": -0.08497034,
     "xirr_pct": null,
     "sp500_value_eur": 14219.39,
     "world_value_eur": 14238.22,
@@ -76,11 +76,11 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 1.676659,
-      "value_eur": 974.03,
-      "current_price_eur": 1.633113,
-      "current_price_local": 17.5,
+      "value_eur": 960.67,
+      "current_price_eur": 1.610716,
+      "current_price_local": 17.26,
       "currency": "NOK",
-      "return_pct": -0.02597176,
+      "return_pct": -0.03932985,
       "status": "GROEN"
     },
     {
@@ -235,7 +235,7 @@
     },
     {
       "date": "2026-11-20",
-      "portfolio": -0.08401619,
+      "portfolio": -0.08497034,
       "sp500": -0.05575819,
       "world": -0.05441306
     }
@@ -245,14 +245,6 @@
       "id": "BUY-2026-11-20-1INN.DE",
       "ticker": "1INN.DE",
       "company": "innoscripta",
-      "side": "BUY",
-      "signal_date": "2026-11-20",
-      "initial": false
-    },
-    {
-      "id": "BUY-2026-11-20-2382.TW",
-      "ticker": "2382.TW",
-      "company": "Quanta Computer",
       "side": "BUY",
       "signal_date": "2026-11-20",
       "initial": false
@@ -311,6 +303,30 @@
       "company": "Seagate Technology",
       "side": "BUY",
       "signal_date": "2026-11-21",
+      "initial": false
+    },
+    {
+      "id": "BUY-2026-11-22-9418.T",
+      "ticker": "9418.T",
+      "company": "U-NEXT HOLDINGS",
+      "side": "BUY",
+      "signal_date": "2026-11-22",
+      "initial": false
+    },
+    {
+      "id": "BUY-2026-11-22-EXPE",
+      "ticker": "EXPE",
+      "company": "Expedia Group",
+      "side": "BUY",
+      "signal_date": "2026-11-22",
+      "initial": false
+    },
+    {
+      "id": "BUY-2026-11-22-LIVN",
+      "ticker": "LIVN",
+      "company": "LivaNova",
+      "side": "BUY",
+      "signal_date": "2026-11-22",
       "initial": false
     }
   ],
@@ -559,8 +575,13 @@
       "MOD": "USD",
       "NWG.WA": "PLN",
       "ATR.WA": "PLN",
-      "SEZL": "USD"
+      "SEZL": "USD",
+      "9418.T": "JPY",
+      "EXPE": "USD",
+      "LIVN": "USD"
     }
   },
-  "warnings": []
+  "warnings": [
+    "2382.TW: pending buy cancelled (no longer confirmed green)"
+  ]
 }
