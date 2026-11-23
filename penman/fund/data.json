@@ -558,10 +558,5 @@
       "WDC": "USD"
     }
   },
-  "warnings": [
-    "CELH: pending buy cancelled (no longer confirmed green)",
-    "MOD: pending buy cancelled (no longer confirmed green)",
-    "EXPE: pending buy cancelled (no longer confirmed green)",
-    "LIVN: pending buy cancelled (no longer confirmed green)"
-  ]
+  "warnings": []
 }
