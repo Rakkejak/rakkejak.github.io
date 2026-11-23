@@ -107,7 +107,7 @@
       "current_price_local": 460.540009,
       "currency": "USD",
       "return_pct": -0.1754283,
-      "status": "GROEN"
+      "status": "BLAUW_GEEL"
     },
     {
       "ticker": "LRN",
@@ -258,22 +258,6 @@
       "initial": false
     },
     {
-      "id": "BUY-2026-11-20-CELH",
-      "ticker": "CELH",
-      "company": "Celsius Holdings",
-      "side": "BUY",
-      "signal_date": "2026-11-20",
-      "initial": false
-    },
-    {
-      "id": "BUY-2026-11-20-MOD",
-      "ticker": "MOD",
-      "company": "Modexus Solutions",
-      "side": "BUY",
-      "signal_date": "2026-11-20",
-      "initial": false
-    },
-    {
       "id": "BUY-2026-11-20-NWG.WA",
       "ticker": "NWG.WA",
       "company": "Newag",
@@ -314,19 +298,11 @@
       "initial": false
     },
     {
-      "id": "BUY-2026-11-22-EXPE",
-      "ticker": "EXPE",
-      "company": "Expedia Group",
+      "id": "BUY-2026-11-23-WDC",
+      "ticker": "WDC",
+      "company": "Western Digital",
       "side": "BUY",
-      "signal_date": "2026-11-22",
-      "initial": false
-    },
-    {
-      "id": "BUY-2026-11-22-LIVN",
-      "ticker": "LIVN",
-      "company": "LivaNova",
-      "side": "BUY",
-      "signal_date": "2026-11-22",
+      "signal_date": "2026-11-23",
       "initial": false
     }
   ],
@@ -578,10 +554,14 @@
       "SEZL": "USD",
       "9418.T": "JPY",
       "EXPE": "USD",
-      "LIVN": "USD"
+      "LIVN": "USD",
+      "WDC": "USD"
     }
   },
   "warnings": [
-    "2382.TW: pending buy cancelled (no longer confirmed green)"
+    "CELH: pending buy cancelled (no longer confirmed green)",
+    "MOD: pending buy cancelled (no longer confirmed green)",
+    "EXPE: pending buy cancelled (no longer confirmed green)",
+    "LIVN: pending buy cancelled (no longer confirmed green)"
   ]
 }
