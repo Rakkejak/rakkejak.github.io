@@ -4450,5 +4450,485 @@
     "ticker": "WDC",
     "quote_currency": "USD",
     "marketcap_raw": 97739538432.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "000660.KS",
+    "quote_currency": "KRW",
+    "marketcap_raw": 820116556087296.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "005930.KS",
+    "quote_currency": "KRW",
+    "marketcap_raw": 1235312588095488.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "1INN.DE",
+    "quote_currency": "EUR",
+    "marketcap_raw": 418000000.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "2222.T",
+    "quote_currency": "JPY",
+    "marketcap_raw": 425322807296.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "2330.TW",
+    "quote_currency": "TWD",
+    "marketcap_raw": 57829176115200.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "3037.TW",
+    "quote_currency": "TWD",
+    "marketcap_raw": 1008777297920.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "4431.T",
+    "quote_currency": "JPY",
+    "marketcap_raw": 56053280768.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "51R.F",
+    "quote_currency": "EUR",
+    "marketcap_raw": 1460439808.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "6223.TWO",
+    "quote_currency": "TWD",
+    "marketcap_raw": 410051805184.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "6531.TW",
+    "quote_currency": "TWD",
+    "marketcap_raw": 92366110720.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "6857.T",
+    "quote_currency": "JPY",
+    "marketcap_raw": 19634004688896.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "688008.SS",
+    "quote_currency": "CNY",
+    "marketcap_raw": 163454451712.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "7747.T",
+    "quote_currency": "JPY",
+    "marketcap_raw": 1148588916736.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "8136.T",
+    "quote_currency": "JPY",
+    "marketcap_raw": 1229235421184.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "9418.T",
+    "quote_currency": "JPY",
+    "marketcap_raw": 328643084288.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "ACAD",
+    "quote_currency": "USD",
+    "marketcap_raw": 3053888000.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "ALAB",
+    "quote_currency": "USD",
+    "marketcap_raw": 38822596608.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "ALNY",
+    "quote_currency": "USD",
+    "marketcap_raw": 20891582464.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "APH",
+    "quote_currency": "USD",
+    "marketcap_raw": 191145525248.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "APP",
+    "quote_currency": "USD",
+    "marketcap_raw": 123887919104.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "ASML",
+    "quote_currency": "USD",
+    "marketcap_raw": 533333344256.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "ATR.WA",
+    "quote_currency": "PLN",
+    "marketcap_raw": 419507104.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "AVGO",
+    "quote_currency": "USD",
+    "marketcap_raw": 1496771592192.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "BONEX.ST",
+    "quote_currency": "SEK",
+    "marketcap_raw": 21473691648.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "CLS",
+    "quote_currency": "USD",
+    "marketcap_raw": 26900910080.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "CRDO",
+    "quote_currency": "USD",
+    "marketcap_raw": 23016591360.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "DBO.TO",
+    "quote_currency": "CAD",
+    "marketcap_raw": 195475920.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "DELIA.OL",
+    "quote_currency": "NOK",
+    "marketcap_raw": 816138368.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "ELA",
+    "quote_currency": "USD",
+    "marketcap_raw": 311011456.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "EXA.PA",
+    "quote_currency": "EUR",
+    "marketcap_raw": 2136265984.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "EXPE",
+    "quote_currency": "USD",
+    "marketcap_raw": 28393803776.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "FICO",
+    "quote_currency": "USD",
+    "marketcap_raw": 15465893888.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "FIX",
+    "quote_currency": "USD",
+    "marketcap_raw": 40532221952.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "FRAMERY.HE",
+    "quote_currency": "EUR",
+    "marketcap_raw": 576824256.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "FTLF",
+    "quote_currency": "USD",
+    "marketcap_raw": 59257664.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "GEV",
+    "quote_currency": "USD",
+    "marketcap_raw": 200283799552.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "GOOGL",
+    "quote_currency": "USD",
+    "marketcap_raw": 3468137332736.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "HANZA.ST",
+    "quote_currency": "SEK",
+    "marketcap_raw": 9775102976.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "HWM",
+    "quote_currency": "USD",
+    "marketcap_raw": 86403670016.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "INDXA.MC",
+    "quote_currency": "EUR",
+    "marketcap_raw": 239744800.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "INOD",
+    "quote_currency": "USD",
+    "marketcap_raw": 1107465216.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "KLAC",
+    "quote_currency": "USD",
+    "marketcap_raw": 190037082112.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "LDB.MI",
+    "quote_currency": "EUR",
+    "marketcap_raw": 124445024.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "LIFX",
+    "quote_currency": "USD",
+    "marketcap_raw": 3289345536.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "LITE",
+    "quote_currency": "USD",
+    "marketcap_raw": 49367052288.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "LLY",
+    "quote_currency": "USD",
+    "marketcap_raw": 1215510609920.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "MOD",
+    "quote_currency": "USD",
+    "marketcap_raw": 7308724736.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "MTSI",
+    "quote_currency": "USD",
+    "marketcap_raw": 17760962560.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "MU",
+    "quote_currency": "USD",
+    "marketcap_raw": 800708231168.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "NEM.DE",
+    "quote_currency": "EUR",
+    "marketcap_raw": 5890030592.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "NFLX",
+    "quote_currency": "USD",
+    "marketcap_raw": 238577532928.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "NVDA",
+    "quote_currency": "USD",
+    "marketcap_raw": 3985462263808.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "NWG.WA",
+    "quote_currency": "PLN",
+    "marketcap_raw": 3568500224.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "NXSN.TA",
+    "quote_currency": "ILA",
+    "marketcap_raw": 15761312768.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "PDEX",
+    "quote_currency": "USD",
+    "marketcap_raw": 217408080.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "PEGA",
+    "quote_currency": "USD",
+    "marketcap_raw": 4625132032.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "PENG",
+    "quote_currency": "USD",
+    "marketcap_raw": 2560446976.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "PGNY",
+    "quote_currency": "USD",
+    "marketcap_raw": 2616689664.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "PLTR",
+    "quote_currency": "USD",
+    "marketcap_raw": 383977553920.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "RHM.DE",
+    "quote_currency": "EUR",
+    "marketcap_raw": 33843681280.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "SECT-B.ST",
+    "quote_currency": "SEK",
+    "marketcap_raw": 62925201408.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "SENSO.HE",
+    "quote_currency": "EUR",
+    "marketcap_raw": 1846894336.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "SEZL",
+    "quote_currency": "USD",
+    "marketcap_raw": 4843526144.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "SIMO",
+    "quote_currency": "USD",
+    "marketcap_raw": 5202201600.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "SLYG.DE",
+    "quote_currency": "EUR",
+    "marketcap_raw": 1167563264.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "SMCI",
+    "quote_currency": "USD",
+    "marketcap_raw": 16170848256.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "SMTC",
+    "quote_currency": "USD",
+    "marketcap_raw": 9717996544.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "SNDK",
+    "quote_currency": "USD",
+    "marketcap_raw": 99841597440.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "STRL",
+    "quote_currency": "USD",
+    "marketcap_raw": 8503191552.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "STX",
+    "quote_currency": "USD",
+    "marketcap_raw": 119394721792.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "TEA.AX",
+    "quote_currency": "AUD",
+    "marketcap_raw": 2366212352.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "THEON.AS",
+    "quote_currency": "EUR",
+    "marketcap_raw": 2071694464.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "TPRO.MI",
+    "quote_currency": "EUR",
+    "marketcap_raw": 12819193856.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "UBER",
+    "quote_currency": "USD",
+    "marketcap_raw": 130824413184.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "VICR",
+    "quote_currency": "USD",
+    "marketcap_raw": 6554947072.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "VNP.TO",
+    "quote_currency": "CAD",
+    "marketcap_raw": 2753819648.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "VRT",
+    "quote_currency": "USD",
+    "marketcap_raw": 71756013568.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "VSEC",
+    "quote_currency": "USD",
+    "marketcap_raw": 5144918528.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "VYT.MC",
+    "quote_currency": "EUR",
+    "marketcap_raw": 101200744.0
+  },
+  {
+    "date": "2026-11-24",
+    "ticker": "WDC",
+    "quote_currency": "USD",
+    "marketcap_raw": 111267594240.0
   }
 ]
