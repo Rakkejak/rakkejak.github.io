@@ -2,15 +2,15 @@
   "asof": "2026-11-23",
   "name": "Rakkejak Fund",
   "summary": {
-    "invested_eur": 16000.0,
-    "value_eur": 15567.67,
-    "equity_eur": 15567.67,
+    "invested_eur": 19000.0,
+    "value_eur": 18591.08,
+    "equity_eur": 18591.08,
     "cash_eur": 0.0,
-    "return_pct": -0.02702089,
-    "twr_pct": -0.03479758,
-    "xirr_pct": -0.8415283528619719,
-    "sp500_value_eur": 15886.46,
-    "world_value_eur": 15829.83,
+    "return_pct": -0.02152198,
+    "twr_pct": -0.03324608,
+    "xirr_pct": -0.824652584158267,
+    "sp500_value_eur": 18886.46,
+    "world_value_eur": 18829.83,
     "sp500_twr_pct": -0.01146082,
     "world_twr_pct": -0.01512306,
     "dividends_eur": 0.0,
@@ -45,6 +45,19 @@
       "status": "GROEN"
     },
     {
+      "ticker": "1INN.DE",
+      "company": "Innoscripta",
+      "date": "2026-11-23",
+      "invested_eur": 1000.0,
+      "buy_eur": 41.799999,
+      "value_eur": 1000.0,
+      "current_price_eur": 41.799999,
+      "current_price_local": 41.799999,
+      "currency": "EUR",
+      "return_pct": 0.0,
+      "status": "GROEN"
+    },
+    {
       "ticker": "ACAD",
       "company": "ACADIA Pharmaceuticals",
       "date": "2026-11-20",
@@ -55,6 +68,19 @@
       "current_price_local": 17.67,
       "currency": "USD",
       "return_pct": 0.03255948,
+      "status": "GROEN"
+    },
+    {
+      "ticker": "ATR.WA",
+      "company": "Atrem",
+      "date": "2026-11-23",
+      "invested_eur": 1000.0,
+      "buy_eur": 10.191383,
+      "value_eur": 1000.0,
+      "current_price_eur": 10.191383,
+      "current_price_local": 45.450001,
+      "currency": "PLN",
+      "return_pct": 0.0,
       "status": "GROEN"
     },
     {
@@ -76,11 +102,11 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 1.676659,
-      "value_eur": 962.31,
-      "current_price_eur": 1.613461,
-      "current_price_local": 17.26,
+      "value_eur": 985.72,
+      "current_price_eur": 1.652723,
+      "current_price_local": 17.68,
       "currency": "NOK",
-      "return_pct": -0.03769278,
+      "return_pct": -0.01427626,
       "status": "GROEN"
     },
     {
@@ -133,6 +159,19 @@
       "current_price_local": 707.700012,
       "currency": "USD",
       "return_pct": -0.00421069,
+      "status": "GROEN"
+    },
+    {
+      "ticker": "NWG.WA",
+      "company": "Newag",
+      "date": "2026-11-23",
+      "invested_eur": 1000.0,
+      "buy_eur": 17.781665,
+      "value_eur": 1000.0,
+      "current_price_eur": 17.781665,
+      "current_price_local": 79.300003,
+      "currency": "PLN",
+      "return_pct": -0.0,
       "status": "GROEN"
     },
     {
@@ -254,44 +293,12 @@
     },
     {
       "date": "2026-11-23",
-      "portfolio": -0.03479758,
+      "portfolio": -0.03324608,
       "sp500": -0.01146082,
       "world": -0.01512306
     }
   ],
   "pending_orders": [
-    {
-      "id": "BUY-2026-11-20-1INN.DE",
-      "ticker": "1INN.DE",
-      "company": "innoscripta",
-      "side": "BUY",
-      "signal_date": "2026-11-20",
-      "initial": false
-    },
-    {
-      "id": "BUY-2026-11-20-51R.F",
-      "ticker": "51R.F",
-      "company": "Hacksaw",
-      "side": "BUY",
-      "signal_date": "2026-11-20",
-      "initial": false
-    },
-    {
-      "id": "BUY-2026-11-20-NWG.WA",
-      "ticker": "NWG.WA",
-      "company": "Newag",
-      "side": "BUY",
-      "signal_date": "2026-11-20",
-      "initial": false
-    },
-    {
-      "id": "BUY-2026-11-21-ATR.WA",
-      "ticker": "ATR.WA",
-      "company": "Atrem",
-      "side": "BUY",
-      "signal_date": "2026-11-21",
-      "initial": false
-    },
     {
       "id": "BUY-2026-11-22-9418.T",
       "ticker": "9418.T",
@@ -521,6 +528,48 @@
       "reason": ""
     },
     {
+      "id": "BUY-2026-11-20-1INN.DE",
+      "ticker": "1INN.DE",
+      "company": "Innoscripta",
+      "side": "BUY",
+      "date": "2026-11-23",
+      "signal_date": "2026-11-20",
+      "shares": 23.923445413,
+      "price_local": 41.799999237,
+      "currency": "EUR",
+      "fx_per_eur": 1.0,
+      "amount_eur": 1000.0,
+      "reason": ""
+    },
+    {
+      "id": "BUY-2026-11-21-ATR.WA",
+      "ticker": "ATR.WA",
+      "company": "Atrem",
+      "side": "BUY",
+      "date": "2026-11-23",
+      "signal_date": "2026-11-21",
+      "shares": 98.122111437,
+      "price_local": 45.450000763,
+      "currency": "PLN",
+      "fx_per_eur": 4.45965004,
+      "amount_eur": 1000.0,
+      "reason": ""
+    },
+    {
+      "id": "BUY-2026-11-20-NWG.WA",
+      "ticker": "NWG.WA",
+      "company": "Newag",
+      "side": "BUY",
+      "date": "2026-11-23",
+      "signal_date": "2026-11-20",
+      "shares": 56.237703254,
+      "price_local": 79.300003052,
+      "currency": "PLN",
+      "fx_per_eur": 4.45965004,
+      "amount_eur": 1000.0,
+      "reason": ""
+    },
+    {
       "id": "BUY-2026-11-21-SEZL",
       "ticker": "SEZL",
       "company": "Sezzle",
@@ -575,5 +624,7 @@
       "WDC": "USD"
     }
   },
-  "warnings": []
+  "warnings": [
+    "51R.F: pending buy cancelled (no longer confirmed green)"
+  ]
 }
