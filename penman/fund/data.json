@@ -120,7 +120,7 @@
       "current_price_local": 76.470001,
       "currency": "USD",
       "return_pct": -0.00083584,
-      "status": "GROEN"
+      "status": "GEEN_GROEI_MATCH"
     },
     {
       "ticker": "MU",
@@ -146,7 +146,7 @@
       "current_price_local": 7.81,
       "currency": "USD",
       "return_pct": -0.02137705,
-      "status": "GROEN"
+      "status": "GEEN_GROEI_MATCH"
     },
     {
       "ticker": "PEGA",
@@ -575,7 +575,5 @@
       "WDC": "USD"
     }
   },
-  "warnings": [
-    "STX: pending buy cancelled (no longer confirmed green)"
-  ]
+  "warnings": []
 }
