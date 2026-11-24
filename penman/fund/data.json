@@ -624,7 +624,5 @@
       "WDC": "USD"
     }
   },
-  "warnings": [
-    "51R.F: pending buy cancelled (no longer confirmed green)"
-  ]
+  "warnings": []
 }
