@@ -1,18 +1,18 @@
 {
-  "asof": "2026-11-23",
+  "asof": "2026-11-24",
   "name": "Rakkejak Fund",
   "summary": {
-    "invested_eur": 19000.0,
-    "value_eur": 18591.08,
-    "equity_eur": 18591.08,
+    "invested_eur": 21000.0,
+    "value_eur": 20446.17,
+    "equity_eur": 20446.17,
     "cash_eur": 0.0,
-    "return_pct": -0.02152198,
-    "twr_pct": -0.03324608,
-    "xirr_pct": -0.824652584158267,
-    "sp500_value_eur": 18886.46,
-    "world_value_eur": 18829.83,
-    "sp500_twr_pct": -0.01146082,
-    "world_twr_pct": -0.01512306,
+    "return_pct": -0.02637294,
+    "twr_pct": -0.04078175,
+    "xirr_pct": -0.8566333217667983,
+    "sp500_value_eur": 20903.97,
+    "world_value_eur": 20872.39,
+    "sp500_twr_pct": -0.01054434,
+    "world_twr_pct": -0.01289689,
     "dividends_eur": 0.0,
     "sale_proceeds_eur": 0.0,
     "realized_gain_eur": 0.0
@@ -24,11 +24,11 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 748.236762,
-      "value_eur": 984.76,
-      "current_price_eur": 736.837096,
-      "current_price_local": 1085000.0,
+      "value_eur": 1059.03,
+      "current_price_eur": 792.407127,
+      "current_price_local": 1158000.0,
       "currency": "KRW",
-      "return_pct": -0.01523537,
+      "return_pct": 0.0590326,
       "status": "GROEN"
     },
     {
@@ -37,11 +37,11 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 129.680743,
-      "value_eur": 929.53,
-      "current_price_eur": 120.542474,
-      "current_price_local": 177500.0,
+      "value_eur": 999.41,
+      "current_price_eur": 129.604413,
+      "current_price_local": 189400.0,
       "currency": "KRW",
-      "return_pct": -0.07046743,
+      "return_pct": -0.0005886,
       "status": "GROEN"
     },
     {
@@ -55,6 +55,19 @@
       "current_price_local": 41.799999,
       "currency": "EUR",
       "return_pct": 0.0,
+      "status": "ONBEKEND"
+    },
+    {
+      "ticker": "9418.T",
+      "company": "U-NEXT HOLDINGS",
+      "date": "2026-11-24",
+      "invested_eur": 1000.0,
+      "buy_eur": 10.4933,
+      "value_eur": 1000.0,
+      "current_price_eur": 10.4933,
+      "current_price_local": 1820.0,
+      "currency": "JPY",
+      "return_pct": -0.0,
       "status": "GROEN"
     },
     {
@@ -63,11 +76,11 @@
       "date": "2026-11-20",
       "invested_eur": 1000.0,
       "buy_eur": 15.597477,
-      "value_eur": 1032.56,
-      "current_price_eur": 16.105322,
-      "current_price_local": 17.67,
+      "value_eur": 1074.42,
+      "current_price_eur": 16.75819,
+      "current_price_local": 18.280001,
       "currency": "USD",
-      "return_pct": 0.03255948,
+      "return_pct": 0.07441676,
       "status": "GROEN"
     },
     {
@@ -76,11 +89,11 @@
       "date": "2026-11-23",
       "invested_eur": 1000.0,
       "buy_eur": 10.191383,
-      "value_eur": 1000.0,
-      "current_price_eur": 10.191383,
+      "value_eur": 1004.69,
+      "current_price_eur": 10.239162,
       "current_price_local": 45.450001,
       "currency": "PLN",
-      "return_pct": 0.0,
+      "return_pct": 0.00468819,
       "status": "GROEN"
     },
     {
@@ -89,11 +102,11 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 0.534222,
-      "value_eur": 1059.08,
-      "current_price_eur": 0.565783,
-      "current_price_local": 0.89,
+      "value_eur": 1075.29,
+      "current_price_eur": 0.574445,
+      "current_price_local": 0.9,
       "currency": "CAD",
-      "return_pct": 0.05907924,
+      "return_pct": 0.07529235,
       "status": "GROEN"
     },
     {
@@ -102,11 +115,11 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 1.676659,
-      "value_eur": 985.72,
-      "current_price_eur": 1.652723,
+      "value_eur": 983.06,
+      "current_price_eur": 1.648257,
       "current_price_local": 17.68,
       "currency": "NOK",
-      "return_pct": -0.01427626,
+      "return_pct": -0.01693935,
       "status": "GROEN"
     },
     {
@@ -115,11 +128,11 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 6.210109,
-      "value_eur": 926.11,
-      "current_price_eur": 5.75125,
-      "current_price_local": 6.31,
+      "value_eur": 974.31,
+      "current_price_eur": 6.05055,
+      "current_price_local": 6.6,
       "currency": "USD",
-      "return_pct": -0.07388907,
+      "return_pct": -0.02569345,
       "status": "GROEN"
     },
     {
@@ -128,11 +141,11 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 509.147082,
-      "value_eur": 974.52,
-      "current_price_eur": 496.175182,
-      "current_price_local": 544.380005,
+      "value_eur": 877.09,
+      "current_price_eur": 446.567249,
+      "current_price_local": 487.119995,
       "currency": "USD",
-      "return_pct": -0.02547771,
+      "return_pct": -0.12291111,
       "status": "BLAUW_GEEL"
     },
     {
@@ -141,11 +154,11 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 69.756892,
-      "value_eur": 999.16,
-      "current_price_eur": 69.698586,
-      "current_price_local": 76.470001,
+      "value_eur": 1022.19,
+      "current_price_eur": 71.304813,
+      "current_price_local": 77.779999,
       "currency": "USD",
-      "return_pct": -0.00083584,
+      "return_pct": 0.02219022,
       "status": "GEEN_GROEI_MATCH"
     },
     {
@@ -154,11 +167,11 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 647.760727,
-      "value_eur": 995.79,
-      "current_price_eur": 645.033211,
-      "current_price_local": 707.700012,
+      "value_eur": 891.32,
+      "current_price_eur": 577.359954,
+      "current_price_local": 629.789978,
       "currency": "USD",
-      "return_pct": -0.00421069,
+      "return_pct": -0.1086833,
       "status": "GROEN"
     },
     {
@@ -167,11 +180,11 @@
       "date": "2026-11-23",
       "invested_eur": 1000.0,
       "buy_eur": 17.781665,
-      "value_eur": 1000.0,
-      "current_price_eur": 17.781665,
+      "value_eur": 1004.69,
+      "current_price_eur": 17.865029,
       "current_price_local": 79.300003,
       "currency": "PLN",
-      "return_pct": -0.0,
+      "return_pct": 0.00468819,
       "status": "GROEN"
     },
     {
@@ -180,11 +193,11 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 7.27392,
-      "value_eur": 978.62,
-      "current_price_eur": 7.118425,
-      "current_price_local": 7.81,
+      "value_eur": 952.81,
+      "current_price_eur": 6.93063,
+      "current_price_local": 7.56,
       "currency": "USD",
-      "return_pct": -0.02137705,
+      "return_pct": -0.04719463,
       "status": "GEEN_GROEI_MATCH"
     },
     {
@@ -193,11 +206,11 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 27.85002,
-      "value_eur": 924.87,
-      "current_price_eur": 25.757579,
-      "current_price_local": 28.26,
+      "value_eur": 959.21,
+      "current_price_eur": 26.714094,
+      "current_price_local": 29.139999,
       "currency": "USD",
-      "return_pct": -0.07513248,
+      "return_pct": -0.04078725,
       "status": "GROEN"
     },
     {
@@ -206,11 +219,11 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 39.85199,
-      "value_eur": 966.07,
-      "current_price_eur": 38.499652,
-      "current_price_local": 42.240002,
+      "value_eur": 864.26,
+      "current_price_eur": 34.442297,
+      "current_price_local": 37.57,
       "currency": "USD",
-      "return_pct": -0.03393402,
+      "return_pct": -0.13574462,
       "status": "GROEN"
     },
     {
@@ -219,12 +232,12 @@
       "date": "2026-11-23",
       "invested_eur": 1000.0,
       "buy_eur": 130.674589,
-      "value_eur": 1000.0,
-      "current_price_eur": 130.674589,
-      "current_price_local": 143.369995,
+      "value_eur": 1022.93,
+      "current_price_eur": 133.671313,
+      "current_price_local": 145.809998,
       "currency": "USD",
-      "return_pct": 0.0,
-      "status": "GROEN"
+      "return_pct": 0.02293272,
+      "status": "BLAUW_GEEL"
     },
     {
       "ticker": "SMCI",
@@ -232,11 +245,11 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 21.949052,
-      "value_eur": 1018.63,
-      "current_price_eur": 22.35787,
-      "current_price_local": 24.530001,
+      "value_eur": 944.77,
+      "current_price_eur": 20.736885,
+      "current_price_local": 22.620001,
       "currency": "USD",
-      "return_pct": 0.01862577,
+      "return_pct": -0.05522639,
       "status": "GROEN"
     },
     {
@@ -245,11 +258,11 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 90.610309,
-      "value_eur": 882.28,
-      "current_price_eur": 79.943283,
-      "current_price_local": 87.709999,
+      "value_eur": 788.66,
+      "current_price_eur": 71.460659,
+      "current_price_local": 77.949997,
       "currency": "USD",
-      "return_pct": -0.11772419,
+      "return_pct": -0.21134074,
       "status": "GROEN"
     },
     {
@@ -258,11 +271,24 @@
       "date": "2026-11-17",
       "invested_eur": 1000.0,
       "buy_eur": 62.5648,
-      "value_eur": 933.38,
-      "current_price_eur": 58.396604,
-      "current_price_local": 64.07,
+      "value_eur": 948.04,
+      "current_price_eur": 59.313721,
+      "current_price_local": 64.699997,
       "currency": "USD",
-      "return_pct": -0.06662206,
+      "return_pct": -0.05196339,
+      "status": "GROEN"
+    },
+    {
+      "ticker": "WDC",
+      "company": "Western Digital",
+      "date": "2026-11-24",
+      "invested_eur": 1000.0,
+      "buy_eur": 251.14367,
+      "value_eur": 1000.0,
+      "current_price_eur": 251.14367,
+      "current_price_local": 273.950012,
+      "currency": "USD",
+      "return_pct": 0.0,
       "status": "GROEN"
     }
   ],
@@ -296,26 +322,15 @@
       "portfolio": -0.03324608,
       "sp500": -0.01146082,
       "world": -0.01512306
-    }
-  ],
-  "pending_orders": [
-    {
-      "id": "BUY-2026-11-22-9418.T",
-      "ticker": "9418.T",
-      "company": "U-NEXT HOLDINGS",
-      "side": "BUY",
-      "signal_date": "2026-11-22",
-      "initial": false
     },
     {
-      "id": "BUY-2026-11-23-WDC",
-      "ticker": "WDC",
-      "company": "Western Digital",
-      "side": "BUY",
-      "signal_date": "2026-11-23",
-      "initial": false
+      "date": "2026-11-24",
+      "portfolio": -0.04078175,
+      "sp500": -0.01054434,
+      "world": -0.01289689
     }
   ],
+  "pending_orders": [],
   "transactions": [
     {
       "id": "INITIAL-000660.KS",
@@ -580,6 +595,34 @@
       "price_local": 143.369995117,
       "currency": "USD",
       "fx_per_eur": 1.097152829,
+      "amount_eur": 1000.0,
+      "reason": ""
+    },
+    {
+      "id": "BUY-2026-11-22-9418.T",
+      "ticker": "9418.T",
+      "company": "U-NEXT HOLDINGS",
+      "side": "BUY",
+      "date": "2026-11-24",
+      "signal_date": "2026-11-22",
+      "shares": 95.298901233,
+      "price_local": 1820.0,
+      "currency": "JPY",
+      "fx_per_eur": 173.444000244,
+      "amount_eur": 1000.0,
+      "reason": ""
+    },
+    {
+      "id": "BUY-2026-11-23-WDC",
+      "ticker": "WDC",
+      "company": "Western Digital",
+      "side": "BUY",
+      "date": "2026-11-24",
+      "signal_date": "2026-11-23",
+      "shares": 3.981784606,
+      "price_local": 273.950012207,
+      "currency": "USD",
+      "fx_per_eur": 1.090809941,
       "amount_eur": 1000.0,
       "reason": ""
     }
